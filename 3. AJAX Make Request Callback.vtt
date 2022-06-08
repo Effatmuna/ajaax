@@ -1,0 +1,151 @@
+WEBVTT
+
+00:00.330 --> 00:06.540
+The previous lesson we set up our Ajax request and we can see that all of that information is being
+
+00:06.540 --> 00:08.280
+retrieved whenever we click the button.
+
+00:08.370 --> 00:10.440
+We're going through all the different states.
+
+00:10.560 --> 00:12.390
+And then finally at the 4th ready state.
+
+00:12.420 --> 00:19.450
+We've got some response text so it's not our condition in order to check all of the different ready
+
+00:19.500 --> 00:26.310
+States and wait till we hit number four before we try to retrieve our data.
+
+00:26.310 --> 00:29.580
+Also we want to make sure our status is 200.
+
+00:30.210 --> 00:37.290
+So sh our status and we're going to check to see if it's 200 and if it is at that point then we're ready
+
+00:37.290 --> 00:44.310
+to console log out and we're actually ready to return back our data or response text.
+
+00:44.460 --> 00:52.460
+So we're going to grab it's actually our response text so we grab the value of that and we see that
+
+00:52.530 --> 00:54.920
+we got a ton of text coming back there.
+
+00:54.990 --> 00:59.490
+So this isn't just on format it even though it is within a song format.
+
+00:59.490 --> 01:00.330
+It's still a string.
+
+01:00.330 --> 01:01.450
+It's still taxed.
+
+01:01.530 --> 01:08.970
+So the way to update this is we can parse it out as Jason so we can do Jason parse the javascript function
+
+01:08.970 --> 01:14.100
+that gives us the ability to parse sote string formatted Jaison.
+
+01:14.100 --> 01:20.550
+So let's click and so now we can see that we've got results and we've got a number of different results
+
+01:20.550 --> 01:24.260
+here within this API.
+
+01:24.400 --> 01:30.880
+So we've got categories we've got trivia questions here so incorrect answers.
+
+01:30.880 --> 01:32.310
+So we've got a question.
+
+01:32.530 --> 01:36.960
+We've got the correct answer is true and difficulty is easy.
+
+01:36.970 --> 01:38.390
+And that's the category.
+
+01:38.440 --> 01:44.680
+So it can really easily set up a quick mini trivia game where we can see if the user is able to guess
+
+01:44.740 --> 01:46.230
+all of those answers.
+
+01:46.510 --> 01:49.290
+So let's set up this data in a usable format.
+
+01:49.360 --> 01:53.350
+Opening up our editor open up full screen so we can take a closer look.
+
+01:53.350 --> 01:58.690
+So we saw that we're passing through this you are l but we still have a problem that that content is
+
+01:58.690 --> 02:04.990
+being output within this function and we can't do something like return if we do that then we're actually
+
+02:04.990 --> 02:08.130
+not going to capture that correct information.
+
+02:08.140 --> 02:14.880
+So this is where we need to do a callback because this Ajax request is working asynchronously.
+
+02:14.920 --> 02:23.020
+So what's happening here is that the ready States making that connection to the API and it's waiting
+
+02:23.020 --> 02:24.850
+till the ready state is ready.
+
+02:24.850 --> 02:28.210
+So until the status is 200 to output that text.
+
+02:28.390 --> 02:32.930
+So if we immediately try to return it back then we're not going to get any type of response.
+
+02:32.950 --> 02:38.440
+So this is where we need to do a callback and we can do it within a format of a callback function.
+
+02:38.440 --> 02:44.380
+So the way that this is going to work is that we're going to actually pass through a function and when
+
+02:44.410 --> 02:48.490
+we do get some data that we can make use of it within our function.
+
+02:48.490 --> 02:52.600
+So here is where we can console log that data.
+
+02:52.600 --> 02:56.220
+So this is essentially that returned information.
+
+02:56.530 --> 03:01.710
+And then within here let's set up callback and start a console log.
+
+03:01.780 --> 03:04.990
+This is going into the callback function.
+
+03:05.080 --> 03:06.060
+So let's try the suit.
+
+03:06.100 --> 03:09.460
+So we're Konsole logging the data the return data.
+
+03:09.490 --> 03:12.130
+At this point now we can get rid of the clicked.
+
+03:12.130 --> 03:13.210
+We don't need that anymore.
+
+03:14.950 --> 03:19.080
+And just make sure that we are getting the callback information.
+
+03:19.150 --> 03:19.700
+So there we go.
+
+03:19.720 --> 03:25.240
+So that is working properly and now we're ready to loop through this information and build out our quiz
+
+03:25.240 --> 03:25.770
+game.
+
+03:25.780 --> 03:27.000
+So that's coming up next.

@@ -1,0 +1,364 @@
+WEBVTT
+
+00:00.900 --> 00:04.390
+This lesson we're going to be adding inquiry into our mix.
+
+00:04.410 --> 00:11.280
+So we've already got our R L here so let's create another area here and then in here I want to create
+
+00:11.550 --> 00:13.020
+a select option.
+
+00:13.170 --> 00:19.710
+So this is going to be selecting the resource that the user wants to use in order to make the AJAX call
+
+00:19.920 --> 00:25.800
+to the available u r l that we've specified there in that above input.
+
+00:26.100 --> 00:30.260
+So first one will be a value of just plain old Javascript.
+
+00:31.200 --> 00:37.500
+And let's duplicate this one out and a couple more times because we're all ultimately at the end of
+
+00:37.590 --> 00:38.760
+this application.
+
+00:38.760 --> 00:40.670
+We're not just going to have javascript.
+
+00:40.830 --> 00:43.190
+We're going to have a query.
+
+00:44.110 --> 00:47.490
+Let's update our text here as well.
+
+00:47.520 --> 00:58.910
+We're also going to have acquiesce so it's really nice late Ajax library its promise based Axel's and
+
+00:58.940 --> 01:01.220
+also javascript fetch.
+
+01:01.220 --> 01:02.720
+So we just call it fetch.
+
+01:02.720 --> 01:08.800
+I know it's still javascript's it works in the newer browsers doesn't work in some of the older browsers.
+
+01:08.960 --> 01:17.730
+So this one uses promises this what these two still use the same javascript are SML HTP request so there's
+
+01:17.740 --> 01:19.680
+still going to be using that same request.
+
+01:19.700 --> 01:24.260
+So that's why all three of these are going to work across browsers and Frenches fetches a little bit
+
+01:24.260 --> 01:24.800
+newer.
+
+01:24.860 --> 01:28.960
+So it uses promises and that makes the connection and a little bit of a different way.
+
+01:29.090 --> 01:33.400
+And this is still all Finola javascript but it's still relatively new.
+
+01:33.400 --> 01:38.160
+So not all the browsers are able to work with fetch.
+
+01:38.180 --> 01:44.420
+So that's why fetch really it's coming along but it's still not there yet as we need to have support
+
+01:44.420 --> 01:45.950
+for across browsers.
+
+01:45.950 --> 01:52.880
+So now that we've gotten this selection process we need to have a way whenever the user makes the request
+
+01:53.150 --> 01:57.110
+so we can add an over here which call it's going to make.
+
+01:57.140 --> 02:02.220
+So we know that we've got our javascript one and we should also grab.
+
+02:02.310 --> 02:08.420
+So do a variable and this one we want to see what resource that's going to be using.
+
+02:08.640 --> 02:17.860
+So resource or library we can call it resource because then of course Javascript isn't a library.
+
+02:17.970 --> 02:29.000
+So we just call it whatever resource we want to use to make the AJAX call and Querrey selector and the
+
+02:29.000 --> 02:35.330
+same type of format where we're grabbing it by the name and then whatever the value is within that name.
+
+02:35.330 --> 02:43.010
+So it's resource that we don't need to do anything else with that so it just grab it adds value and
+
+02:43.070 --> 02:50.840
+let's do a switch over here because we are going to have four different ones so we want to switch depending
+
+02:50.840 --> 02:59.540
+on what the resources and depending on what the value is so let's do a case for Jay Querrey as it's
+
+02:59.540 --> 03:02.630
+going to be our first one.
+
+03:02.840 --> 03:04.700
+And here we can do an AJAX.
+
+03:04.700 --> 03:07.960
+It's not going to be us how about G.
+
+03:07.970 --> 03:09.110
+Q Jay.
+
+03:09.130 --> 03:16.910
+Q For Jay query so it's going to do a GI query call and we're still passing over that same URL and we're
+
+03:16.910 --> 03:19.820
+going to add in some additional primers as well.
+
+03:19.980 --> 03:23.530
+And because this is a case we need to break that.
+
+03:23.870 --> 03:27.800
+And then let's let's just have our default case.
+
+03:27.920 --> 03:35.560
+So the default is just going to be this regular javascript point.
+
+03:35.590 --> 03:36.460
+So there we go.
+
+03:36.460 --> 03:44.130
+So that's all set up and we can duplicate our javascript function and update it for Jay.
+
+03:44.140 --> 03:44.820
+CORY.
+
+03:44.860 --> 03:48.920
+So next we need to grab a J Corey library we're just going to use CDN.
+
+03:48.940 --> 03:52.000
+There's a great resource developers dot Google dot com.
+
+03:52.000 --> 03:54.930
+It's got all a bunch of different really useful CD ends.
+
+03:55.090 --> 03:57.390
+So I'm going to just grab it from there.
+
+03:58.100 --> 04:00.820
+Bring the Jay Querrey library into our project.
+
+04:00.820 --> 04:02.870
+Make sure you place that above script.
+
+04:02.950 --> 04:07.380
+Place it afterwards it's not going to have access to the query functionality.
+
+04:08.680 --> 04:18.870
+So next we've got our G-S we've got to reword this and let's call it JQ and we can keep that console
+
+04:18.930 --> 04:20.820
+message of worked.
+
+04:20.840 --> 04:25.060
+It's always good to make sure that things are working.
+
+04:25.110 --> 04:28.300
+So let's set up our Adjaye recall.
+
+04:28.380 --> 04:33.510
+So it's going to be quite a bit different it's going be a lot shorter as well.
+
+04:33.510 --> 04:36.430
+And then within here where we to pass a bunch of data.
+
+04:36.450 --> 04:37.870
+So if you are l.
+
+04:38.370 --> 04:40.620
+We've got a type.
+
+04:40.620 --> 04:43.230
+So currently the type is going to be just get.
+
+04:43.380 --> 04:50.800
+So we'll just specify that for now and we're going to make it dynamic and you can do success as well
+
+04:50.800 --> 04:57.640
+sometimes developers like to use success here and then they grab whatever the data is and then they
+
+04:58.060 --> 04:59.510
+maybe do something with the data.
+
+04:59.620 --> 05:04.030
+So console log the data.
+
+05:04.270 --> 05:08.540
+And in this case let's add that in as done.
+
+05:08.640 --> 05:09.900
+So we're going to do.
+
+05:09.900 --> 05:17.140
+We're going to chain it together and we're going to create a function here so function.
+
+05:17.190 --> 05:23.240
+So when it's done we got that response content coming back.
+
+05:23.530 --> 05:26.150
+So a call it response over here to differentiate it.
+
+05:26.250 --> 05:27.830
+There we had called it data.
+
+05:28.180 --> 05:32.830
+And so next we can output that content.
+
+05:32.980 --> 05:35.610
+And yes Cory is quite a bit shorter.
+
+05:35.710 --> 05:42.070
+It's a lot more readable too as opposed to what we see within the regular javascript we can get rid
+
+05:42.070 --> 05:43.750
+of all of that stuff as well.
+
+05:44.990 --> 05:50.180
+So this is a query so let's update our response to be a query.
+
+05:51.110 --> 05:53.230
+And we also have a status.
+
+05:53.250 --> 05:55.460
+So we're using response.
+
+05:55.790 --> 06:01.200
+So it's going to be response status and then we're just going to be outputting that entire response
+
+06:01.690 --> 06:05.370
+and the difference here is as well that this is going to be detected.
+
+06:05.600 --> 06:09.470
+So if it's in a jigsaw format it's going to detect that it's a case on format.
+
+06:09.530 --> 06:16.490
+So when it picks that up and it sends it into our output it's going to take that parameter in it's going
+
+06:16.490 --> 06:18.220
+to check to see if it's a string.
+
+06:18.230 --> 06:20.110
+It's going to see that it's not a string.
+
+06:20.210 --> 06:27.290
+So it's going to parse the object into it's actually just going to do the response text.
+
+06:27.380 --> 06:29.780
+So this it does this if it is a string.
+
+06:29.780 --> 06:32.090
+So this is the true and that's the false.
+
+06:32.090 --> 06:34.410
+So it's going to just return that response text.
+
+06:34.550 --> 06:41.850
+And then over here when we're outputting were string firing those values and before we actually go out
+
+06:42.000 --> 06:46.690
+this one here we need to grab that by resource because we've got an ID for it.
+
+06:46.710 --> 06:51.030
+It's not just an input so that one has an idea of resource.
+
+06:51.030 --> 06:54.300
+So let's update that before we try to grab it as an input.
+
+06:54.300 --> 06:55.720
+We wouldn't be able to pick that up.
+
+06:55.920 --> 06:57.340
+So I think we're ready to try this out.
+
+06:57.340 --> 07:02.710
+So let's open up our browser refresh make the request.
+
+07:02.760 --> 07:04.670
+So the javascript is still working.
+
+07:04.950 --> 07:06.000
+Let's do a query.
+
+07:06.060 --> 07:08.380
+So Jay query is working as well.
+
+07:08.580 --> 07:10.650
+So we're able to return back that data.
+
+07:10.680 --> 07:16.130
+And the reason that's putting it out twice because within the G query we're actually logging out of
+
+07:16.230 --> 07:18.040
+that response there.
+
+07:18.270 --> 07:24.240
+So if we comment that went out and I'm going to keep that in just as a placeholder in case you want
+
+07:24.240 --> 07:27.380
+to use it within the success format.
+
+07:27.630 --> 07:28.210
+So there we go.
+
+07:28.230 --> 07:33.840
+So a query javascript making their requests all working.
+
+07:33.840 --> 07:37.940
+So next.
+
+07:38.190 --> 07:41.300
+And let's also make sure that it's outputting properly.
+
+07:42.730 --> 07:45.760
+So we've got our g Querrey response so status is undefined.
+
+07:45.790 --> 07:47.330
+So let's fix that one up.
+
+07:49.950 --> 07:54.410
+And we've got a number of other parameters here that we can return back.
+
+07:54.960 --> 08:01.760
+So one of them is the tech status and the last of that return back to that whole a char object.
+
+08:02.730 --> 08:08.110
+So this is the entire exit char and then within here that's where we can actually grab the status.
+
+08:08.160 --> 08:13.500
+So let's refresh and just make sure everything's working before we move on to the next step.
+
+08:13.500 --> 08:15.730
+So we see that we're getting the status of 200.
+
+08:15.780 --> 08:17.040
+So that's the one that we wanted.
+
+08:18.630 --> 08:21.010
+And Jase javascript response.
+
+08:21.060 --> 08:22.600
+So everything's working properly.
+
+08:22.770 --> 08:28.350
+So go ahead and update your code and the next lesson we're going to bring in X-ers library.
+
+08:28.500 --> 08:30.760
+And then we're also going to do it in fact coming up.
+
+08:30.840 --> 08:32.290
+So all of this still to come.

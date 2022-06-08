@@ -1,0 +1,133 @@
+WEBVTT
+
+00:00.510 --> 00:07.530
+First of that we need to do is set up a way to trigger our AJAX call so we can do that with a button.
+
+00:07.530 --> 00:10.080
+There's a number of ways that we can do this.
+
+00:10.080 --> 00:15.390
+So this is going to be a regular standard button we'll give it an ID so we can identify it.
+
+00:15.390 --> 00:20.240
+So give an idea of Beati and and it'll say click me.
+
+00:21.840 --> 00:29.140
+And next let's hook up our javascript so the javascript is going to be what connects to the API.
+
+00:29.340 --> 00:31.740
+Post back all of that information.
+
+00:31.740 --> 00:40.550
+And first of all let's add in our button and add an event listener to that variable between document.
+
+00:40.770 --> 00:46.540
+We can do get element by ID because we've got an ID of BT.
+
+00:46.710 --> 00:51.910
+So we just grab this last one and place it within the object.
+
+00:51.930 --> 00:58.400
+And now let's add our event listener and the listener that we're going to listen for is a click.
+
+00:58.560 --> 01:01.850
+And when it gets clicked then we're going to fire off a function.
+
+01:04.200 --> 01:11.240
+Next item let's set up our function so function.
+
+01:11.270 --> 01:15.690
+Next item we don't need to pass any parameters.
+
+01:18.060 --> 01:22.490
+And this one here is where all of the action is going to take place.
+
+01:23.430 --> 01:27.310
+So first of all let's just make sure that it's working.
+
+01:27.420 --> 01:30.170
+We'll open up our dev tools.
+
+01:30.300 --> 01:33.160
+Click the button and we see that it's clicked.
+
+01:33.210 --> 01:41.460
+So we're ready to go to continue to build this out and let's build out our request to build out a method
+
+01:41.580 --> 01:50.480
+where we're going to contain all of our Ajax functionality so set up our ex-teacher object will create
+
+01:50.540 --> 01:56.400
+a brand new one so this is SML HTP request object.
+
+01:57.230 --> 02:01.270
+And we also need to specify a method here.
+
+02:01.550 --> 02:07.250
+And then you are l as well as we want to load asynchronously so that's true.
+
+02:07.640 --> 02:10.190
+And actually char send.
+
+02:11.480 --> 02:19.370
+So now our exit char has been sent and we need to still listen to the ready state change
+
+02:23.250 --> 02:31.390
+so on ready state change that we want to fire off or we're going to create a function for that one.
+
+02:31.750 --> 02:33.180
+And let's do.
+
+02:33.240 --> 02:40.070
+SH are object so within this next item function we need to specify.
+
+02:40.110 --> 02:49.020
+L all so excited in your l and let's grab one of these API is just one of these endpoints and post it
+
+02:49.030 --> 02:55.130
+in and then we need to pass in a you are well within the parameters of the function refresh.
+
+02:55.140 --> 02:56.000
+Click the button.
+
+02:56.100 --> 02:57.280
+We see that it's clicked.
+
+02:57.300 --> 03:03.480
+We're not actually outputting it or making the request so it's odd that in and refresh and try again.
+
+03:03.660 --> 03:05.730
+So we see that we go through all of the ready States.
+
+03:05.730 --> 03:07.530
+So there's one two three four.
+
+03:07.590 --> 03:08.730
+So all of them get hit.
+
+03:08.760 --> 03:09.820
+As it changes.
+
+03:09.900 --> 03:15.510
+And on the last one we actually get response information and then this is what we want to make use of
+
+03:15.570 --> 03:19.770
+within our age to mail pieces the content that's coming back.
+
+03:19.860 --> 03:20.980
+So the next lesson.
+
+03:21.090 --> 03:23.300
+Let's dive deeper into the application.
+
+03:23.310 --> 03:26.330
+So go ahead and set this up for yourself within your own web page.
+
+03:26.340 --> 03:31.230
+And next we're going to be showing you how you can make use of the data that we're requesting and retrieving
+
+03:31.230 --> 03:31.560
+back.
+
+03:31.560 --> 03:32.230
+So it's coming up.

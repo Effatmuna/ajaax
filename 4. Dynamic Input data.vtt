@@ -1,0 +1,418 @@
+WEBVTT
+
+00:00.520 --> 00:07.230
+Get an opportunity to make your Ajax request next step is to make this more dynamic so we want to pick
+
+00:07.230 --> 00:16.240
+up the value of this input and pass it along into our Ajax request so let's create a brand new function.
+
+00:17.030 --> 00:21.660
+And because ultimately we want to have a number of different functions and all of these functions are
+
+00:21.660 --> 00:23.390
+going to be doing AJAX calls.
+
+00:23.520 --> 00:29.020
+So this one is going to be doing just a regular javascript function.
+
+00:29.460 --> 00:32.650
+So putting all of that information into javascript.
+
+00:32.800 --> 00:38.770
+And that's what we're going to actually load this information because within the make request when we
+
+00:38.770 --> 00:45.220
+clean this up a bit within the make request we need to account and we need to pick up the or else we
+
+00:45.220 --> 00:46.780
+can pass it within the function.
+
+00:46.930 --> 00:51.310
+So it's going to be one of the parameters that we're going to pass through is you are l and we can get
+
+00:51.310 --> 00:54.340
+rid of that over here because we're going to be passing it into the function.
+
+00:56.890 --> 01:03.650
+And what we want to do is we actually want to pick up the value of the URL from our input over here.
+
+01:03.670 --> 01:05.110
+So let's do that.
+
+01:05.830 --> 01:12.870
+So variable you are l and documents we use Querrey selector again.
+
+01:15.170 --> 01:26.690
+So Querrey selector and selecting that value will do in put name equals Ural and then we don't need
+
+01:26.690 --> 01:28.460
+to do anything else with that object.
+
+01:28.460 --> 01:30.080
+So it just pick up the value there.
+
+01:31.240 --> 01:38.290
+And next we're ready to pass it into our function so irritable person that you are well into the function.
+
+01:38.290 --> 01:39.720
+So let's try that out.
+
+01:39.820 --> 01:43.140
+So a little minor change but it's going to make us more dynamic.
+
+01:43.390 --> 01:47.650
+So this way we can actually change the different values there.
+
+01:47.650 --> 01:52.460
+So if I change users to three we get user 3 if I change user to 4.
+
+01:52.630 --> 01:58.120
+So we're getting whatever you are elsewhere we're putting here and we're getting that output into our
+
+01:58.120 --> 01:59.420
+interface.
+
+01:59.420 --> 02:08.110
+Another thing that I wanted to add into our project is a really nice output within the the web page.
+
+02:08.260 --> 02:13.210
+So instead of having it show up within the console it's going to be nice if we can just see the output
+
+02:13.420 --> 02:16.830
+directly within our Web page so we don't even have to open up our con..
+
+02:16.870 --> 02:21.400
+So let's create that and we'll create a div.
+
+02:21.400 --> 02:29.560
+Call it output and let's make this bigger so we can see the entire content.
+
+02:29.830 --> 02:33.160
+And I get to create another function that's going to actually do the output.
+
+02:33.160 --> 02:42.630
+And this is going to give me the ability to call this function from my Ajax requests and output some
+
+02:42.630 --> 02:50.220
+content into there so that we we know that once we break out of this request the response text is only
+
+02:50.220 --> 02:54.320
+available within this condition here and we're not returning it anywhere.
+
+02:54.330 --> 02:59.730
+So I wanted to make use of it and actually pull it out into the output so we can do that within this
+
+02:59.730 --> 03:01.100
+type of format.
+
+03:01.500 --> 03:06.550
+So do output and let's passen some parameters.
+
+03:08.100 --> 03:16.800
+So some of the parameters that maybe we want to pass in is the response text so call it response text.
+
+03:16.800 --> 03:20.180
+We also maybe want to pass in a status.
+
+03:20.850 --> 03:29.740
+And then lastly maybe we want to pass in some H.R. object information and then with an output let's
+
+03:29.980 --> 03:34.570
+grab we'll put output into a variable.
+
+03:34.670 --> 03:43.160
+So output documents and query selector we can do get element by ID for this one.
+
+03:43.310 --> 03:44.590
+Let's do something different.
+
+03:44.600 --> 03:48.060
+So get element by id the ID is output.
+
+03:48.110 --> 03:52.820
+We don't have to specify the hash because we already know that it is an ID that we're looking for.
+
+03:55.120 --> 04:03.320
+And then let's put in our H T and L and equal that to the response text.
+
+04:03.460 --> 04:07.870
+And we know that the response text actually is going to be in an object format.
+
+04:07.870 --> 04:13.430
+So if we try to output that directly into a web page it's not going to look nice.
+
+04:13.450 --> 04:14.930
+So we need to string a fight.
+
+04:14.980 --> 04:22.190
+So let's string ify our response text and see what that looks like.
+
+04:24.050 --> 04:29.440
+So now we could probably minimize this we still will need our consul for a little bit longer.
+
+04:29.660 --> 04:37.180
+But there we go so we see that we're we're actually not passing that information into output quite yet.
+
+04:37.250 --> 04:47.240
+So let's update that and to put the first parameter passing in is the response text.
+
+04:47.310 --> 04:50.110
+We can also passen are actually our status.
+
+04:50.130 --> 04:58.610
+So we get a number there and then this one we can do something like success so we can just pass our
+
+04:58.610 --> 04:59.840
+own message into it.
+
+04:59.840 --> 05:01.990
+So refresh and let's try that out.
+
+05:02.120 --> 05:02.570
+So there we go.
+
+05:02.570 --> 05:08.740
+So we're actually outputting that content directly into our web page in a readable format.
+
+05:10.240 --> 05:16.630
+And we know that this is coming in as a string value so we don't have to string a fly it again.
+
+05:16.750 --> 05:23.140
+And if it's not coming within a string format because some of the libraries we're going to work with
+
+05:23.140 --> 05:26.560
+are all about automatically going to convert this into a sun object.
+
+05:26.590 --> 05:28.210
+So this could be problematic.
+
+05:28.330 --> 05:30.750
+So let's do a little quick fix for that.
+
+05:31.480 --> 05:37.010
+So open up our editor and we know that we're getting that content coming in here.
+
+05:37.300 --> 05:42.150
+So let's check to see if response text.
+
+05:42.400 --> 05:51.440
+And we're going to do a quick check to see if type of this will be one word.
+
+05:51.450 --> 05:56.070
+So type of response text.
+
+05:56.400 --> 06:04.900
+So if that is equal to a string that we know that it's a string value and we don't have to we don't
+
+06:04.900 --> 06:06.230
+have to do anything else with it.
+
+06:06.230 --> 06:10.410
+We can just leave it as a string value and if it isn't a string.
+
+06:10.550 --> 06:13.940
+So if it's coming in as an object then let's do something with it.
+
+06:13.940 --> 06:15.370
+We're going to parse that in.
+
+06:15.440 --> 06:19.940
+So do Jaison parse.
+
+06:20.130 --> 06:27.390
+So over here what's happening here is if it's coming in and if it's a string then we're going to actually
+
+06:27.390 --> 06:31.530
+turn it into an object so that our string of file will work in all cases.
+
+06:31.530 --> 06:36.710
+And if Over here it's not a string then we're just going to keep it as is.
+
+06:36.840 --> 06:39.360
+And then we're going to string a fight in the output.
+
+06:39.690 --> 06:46.170
+So that way we have uniform output and that will get rid of all of those backslashes as well.
+
+06:46.410 --> 06:49.560
+So there we go so we can see that that data is being pulled through.
+
+06:49.590 --> 06:52.200
+We get our information.
+
+06:52.200 --> 06:53.580
+Let's try a different value.
+
+06:53.640 --> 06:54.150
+So there we go.
+
+06:54.150 --> 07:01.730
+So everything is being output properly and we could also output our status as well.
+
+07:01.770 --> 07:06.880
+So it's build data into the application so we know that we're grabbing this information.
+
+07:06.880 --> 07:12.740
+So it's going to be relatively easy to simply output that inner H T A L and add to it.
+
+07:12.760 --> 07:20.840
+So let's do that and we can do that with the and this one is going to be status.
+
+07:21.730 --> 07:24.970
+And then also let's do the last one as well.
+
+07:25.000 --> 07:28.550
+So the student ex-teacher.
+
+07:28.920 --> 07:33.620
+So even if they're strings we string of them and it looks like they're all going to be strings anyway.
+
+07:33.720 --> 07:39.000
+So we're going to string of find them anyway so there's no harm in having this type of format.
+
+07:39.000 --> 07:45.920
+Either way it's going to be returned as Jason and also I just wanted to quickly add before we go back
+
+07:45.920 --> 07:49.540
+into our age to Mel let's add some styling here.
+
+07:49.580 --> 07:55.340
+So it's to span class and I'll give a class of heading
+
+07:57.910 --> 08:04.460
+and we'll label it response text so we can actually see what it is.
+
+08:04.480 --> 08:13.510
+Know what it is and maybe the side sign data will just output as a paragraph then we need to close off
+
+08:13.720 --> 08:19.810
+the HGA now and close off the def and that should be good.
+
+08:19.960 --> 08:23.790
+Let's do the same thing for the other ones as well.
+
+08:23.890 --> 08:28.410
+So I'm going to just do a quick copy and paste and then we'll update it afterwards.
+
+08:29.050 --> 08:33.690
+So this one isn't response text it's status.
+
+08:34.180 --> 08:37.170
+And of course you can style it however you want.
+
+08:39.960 --> 08:45.360
+And we'll just call this one response because this one we've kind of kept open.
+
+08:45.390 --> 08:48.300
+We're over here we're just putting a string value there.
+
+08:48.400 --> 08:51.910
+So it just gives us a number of different options of how we can do it.
+
+08:51.910 --> 08:59.710
+We might want to just put javascript response so that we know where it's coming from.
+
+08:59.710 --> 09:02.000
+Also let's do some quick styling.
+
+09:02.050 --> 09:07.750
+I don't want to focus too much time on styling but it'll just make a nicer experience when that content
+
+09:07.750 --> 09:08.890
+is being output.
+
+09:09.010 --> 09:10.880
+So excited that styling.
+
+09:11.440 --> 09:16.010
+So we added in classic headings for those spans.
+
+09:16.520 --> 09:27.480
+So within here let's display it as a block and let's give it a width of 100 a quick border so it picks
+
+09:27.500 --> 09:29.490
+solid block.
+
+09:30.280 --> 09:38.170
+And of course you can customize however you want it to look I give a little bit of color and let's do
+
+09:38.170 --> 09:39.050
+the text.
+
+09:39.070 --> 09:40.820
+What do the text wait.
+
+09:41.080 --> 09:48.210
+And we also want to grab those divs that have a paragraph and let's apply some style into those paragraphs.
+
+09:49.660 --> 09:51.760
+And to some something quick.
+
+09:51.760 --> 09:53.090
+So it just stands out.
+
+09:55.000 --> 09:57.650
+So let's try check this out see what it looks like.
+
+09:59.400 --> 10:01.160
+So go back refresh.
+
+10:01.350 --> 10:02.150
+And so there we go.
+
+10:02.150 --> 10:08.610
+So we got a response text our status and our response content we can actually make this a little bit
+
+10:08.610 --> 10:09.960
+smaller as well.
+
+10:11.650 --> 10:13.750
+So we can see everything that's coming in.
+
+10:13.900 --> 10:14.470
+So great.
+
+10:14.500 --> 10:16.830
+So we're ready to move on to the next lesson.
+
+10:16.840 --> 10:22.660
+We've got some information coming in there and we know that whenever we update it this will update as
+
+10:22.660 --> 10:23.750
+well.
+
+10:23.830 --> 10:25.400
+So we see all of that.
+
+10:25.430 --> 10:30.840
+Jason Jason we see the status and we see where we sent it.
+
+10:30.850 --> 10:35.610
+So javascript actually our object was the one that returned this response.
+
+10:35.700 --> 10:36.250
+So go ahead.
+
+10:36.270 --> 10:37.370
+Try this out for yourself.
+
+10:37.380 --> 10:43.560
+Update your code in order to make it more dynamic picking up that you are Ehle information and then
+
+10:43.620 --> 10:46.010
+outputting it within your web page.
+
+10:46.030 --> 10:51.300
+So coming up next we're going to spice things up a little bit and we're going to bring in some of the
+
+10:51.300 --> 10:51.860
+libraries.
+
+10:51.900 --> 10:58.930
+You've got Jay Querrey Ajax and we're also going to be doing acquiesce as well as we're going to be
+
+10:58.930 --> 11:00.110
+using fetch as well.
+
+11:00.130 --> 11:01.330
+So all of this is coming up.

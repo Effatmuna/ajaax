@@ -1,0 +1,214 @@
+WEBVTT
+
+00:00.640 --> 00:04.220
+Last lesson we saw how we can retrieve data from the API.
+
+00:04.260 --> 00:07.770
+Now we need to make use of this data and output it within our team.
+
+00:08.030 --> 00:13.920
+So let's open up our editor and update some or H-2 else we have our output area.
+
+00:13.950 --> 00:14.940
+We have a score.
+
+00:15.030 --> 00:23.950
+We have a button to move to the next one we need to also grab that output area into a usable format.
+
+00:23.950 --> 00:33.780
+So an object will just to get element by Id grab that output element into the value of output.
+
+00:33.910 --> 00:37.720
+And now we can also make use of the results here.
+
+00:37.750 --> 00:45.340
+So let's set up a variable and call it OPG and I'm going to basically place this value in so I don't
+
+00:45.340 --> 00:51.350
+have to keep rewriting it and we can also build out our H.T. m-L.
+
+00:51.620 --> 00:52.280
+So we.
+
+00:52.280 --> 00:59.590
+So we've got our h t m l and then what we want to do is build out what our channel is going to look
+
+00:59.590 --> 01:00.610
+like.
+
+01:01.390 --> 01:08.130
+So and here we just simply have to do H-2 mile plus plus equals.
+
+01:08.260 --> 01:14.860
+And then here is where we can build out like if we needed a div which we should probably wrap it with
+
+01:14.860 --> 01:18.530
+a div and close it so we build Dahdah it.
+
+01:19.120 --> 01:26.240
+And then lastly we do output in our h t m l equals H2 you know.
+
+01:26.290 --> 01:28.180
+So we simply output that content.
+
+01:28.360 --> 01:29.910
+So first of all let's try the suit.
+
+01:29.950 --> 01:31.480
+So no we've made some changes.
+
+01:31.510 --> 01:36.880
+It's always a good idea to constantly check in case you get some errors so see that we did get one error
+
+01:36.910 --> 01:38.400
+there being thrown.
+
+01:38.740 --> 01:44.510
+So what happened here is I when I copied and pasted I kept that extra rounded bracket in there.
+
+01:44.540 --> 01:45.740
+So now we go to the console.
+
+01:45.760 --> 01:47.080
+So everything is working.
+
+01:47.110 --> 01:49.220
+We've got our question popping up.
+
+01:49.330 --> 01:50.320
+We can load more.
+
+01:50.380 --> 01:51.740
+So everything is still working.
+
+01:51.940 --> 01:53.690
+So now we need to break this up.
+
+01:53.710 --> 01:57.330
+Some of this content we see that we've got categories.
+
+01:57.430 --> 02:04.360
+So it's probably a good place to start that we can create a div in here give it a class let's call it
+
+02:04.360 --> 02:05.620
+cat for short.
+
+02:05.620 --> 02:08.820
+And then this is where we're going to drop our category.
+
+02:09.940 --> 02:14.710
+And then here now we can do object category.
+
+02:14.770 --> 02:18.350
+So what other information do we need.
+
+02:18.490 --> 02:26.540
+And let's separate the soat and these like to just double check and make sure it's still working.
+
+02:28.840 --> 02:34.930
+So load more and let's take a look at our age to out just make sure that it's always building it out
+
+02:34.930 --> 02:35.990
+properly.
+
+02:36.040 --> 02:40.510
+So I've got our question and we've got our category that is working.
+
+02:40.510 --> 02:46.720
+So next thing that we might want to do is we want to put the question obviously so we need to have somewhere
+
+02:46.720 --> 02:49.650
+to output that for the users.
+
+02:49.690 --> 03:00.590
+So give us one class Quest's and close it off close off the div and then in here we can add in the question
+
+03:00.590 --> 03:02.200
+for the user.
+
+03:02.270 --> 03:06.530
+The first thing I usually like to do is just build out what it's going to look like and then do the
+
+03:06.530 --> 03:07.750
+styling afterwards.
+
+03:07.760 --> 03:14.470
+So I'm just adding in a lot of the IT KIND OF US placeholders for the styling and let's clean this up
+
+03:14.470 --> 03:15.030
+a bit.
+
+03:18.740 --> 03:22.290
+So close that one off we'll start a brand new line there.
+
+03:25.030 --> 03:28.300
+So we also need to listo it.
+
+03:29.020 --> 03:36.010
+So we've got the category we've got the question and we could also list out the difficulty if we wanted
+
+03:36.010 --> 03:39.020
+to or we could score differently for difficulty.
+
+03:39.370 --> 03:40.820
+So next in that we need.
+
+03:41.140 --> 03:44.780
+So let me just refresh I know I've got the question there twice.
+
+03:44.990 --> 03:52.750
+And what we need to do is we need to give the user some options some buttons to click and if we take
+
+03:52.750 --> 03:54.870
+a look at the way this is structured.
+
+03:54.940 --> 04:02.770
+So we've got this multiple here that allows us to determine what type of questioners.
+
+04:02.800 --> 04:04.020
+So let's build this out.
+
+04:04.060 --> 04:08.890
+And what I want to do is I want to create a function that's actually going to build this out and return
+
+04:08.890 --> 04:13.730
+back the H2 M-L for it because we know that we've got the correct answer.
+
+04:13.840 --> 04:16.730
+And then we've got some optional incorrect answers.
+
+04:19.290 --> 04:20.830
+So let's set that up.
+
+04:21.120 --> 04:24.450
+And in the next lesson we take care of that we're going to have a function.
+
+04:24.660 --> 04:30.450
+And this is going to be the question builder.
+
+04:30.870 --> 04:32.350
+So really question builder.
+
+04:32.430 --> 04:38.160
+But you get the idea and what it's going to do is it's going to return the format at HMO.
+
+04:38.310 --> 04:40.920
+So we're going to pass in the possible options.
+
+04:40.960 --> 04:43.880
+We're going to pass an incorrect and correct.
+
+04:44.130 --> 04:48.520
+All within within two different values.
+
+04:48.680 --> 04:49.940
+And then we'll loop through it.
+
+04:49.970 --> 04:54.410
+So we're going to check to see if the type is multiple and if it is then we know we need to build out
+
+04:54.440 --> 04:56.190
+our questions in this type of format.
+
+04:56.420 --> 04:57.650
+So all of that is coming up.

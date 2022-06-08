@@ -1,0 +1,229 @@
+WEBVTT
+
+00:00.880 --> 00:06.570
+This is going to be the fun part of the lessons because here is where we go over the code.
+
+00:06.610 --> 00:10.930
+Make sure everything's working and apply some final tweaks to the code.
+
+00:10.930 --> 00:15.960
+So first of all let's go and open up her application and try to see how it's functioning.
+
+00:16.060 --> 00:20.400
+And take a quick look over to make sure that there aren't any issues.
+
+00:20.470 --> 00:22.800
+So there are a number of things that we still need to do.
+
+00:22.870 --> 00:32.090
+And one of them is that we need to add in some type of class or some type of way to distinguish that
+
+00:32.180 --> 00:36.750
+these divs are buttons so we can do that within styling.
+
+00:37.010 --> 00:46.700
+We could add classes as well but to keep things simple what we'll do is we'll grab the elements by id
+
+00:50.190 --> 00:53.950
+and over here we're going to.
+
+00:55.140 --> 00:59.540
+So all of the divs that are underneath so any div that we have in there.
+
+00:59.580 --> 01:02.640
+So you got to be careful not to add any additional divs.
+
+01:03.480 --> 01:12.930
+So do border solid will do a block border add some padding around it to make it look a little bit more
+
+01:12.930 --> 01:14.110
+like a button.
+
+01:16.610 --> 01:19.760
+And also some margin's around it as well.
+
+01:19.940 --> 01:22.610
+So they're not right next to each other so see what this looks like.
+
+01:22.610 --> 01:32.090
+Now we should also to display and would try inline block see how that works.
+
+01:34.450 --> 01:35.050
+So there you go.
+
+01:35.050 --> 01:38.660
+So now we have something that actually looks a little bit more like buttons.
+
+01:38.740 --> 01:42.640
+And of course I'm sure you could style this way better than what I'm doing.
+
+01:42.730 --> 01:45.820
+But we're looking at functionality more than anything right now.
+
+01:45.970 --> 01:49.190
+So we've got our buttons and we've got the ability to click these.
+
+01:49.240 --> 01:55.750
+And so ideally what should have actually happened here is that we should get it either right or wrong
+
+01:56.020 --> 01:59.880
+and then move on to the next question maybe update the score.
+
+01:59.920 --> 02:03.150
+So let's try that at.
+
+02:03.170 --> 02:07.440
+So we know that we've got the answer either true or false.
+
+02:07.460 --> 02:13.160
+So let's do a check to see if Which one is true and which one is false.
+
+02:15.190 --> 02:20.720
+So we've got this value that's coming in and let me.
+
+02:20.740 --> 02:26.760
+Let me place this within on a variable so we can work with it a little bit easier.
+
+02:26.770 --> 02:28.710
+We don't need it within the console at the moment.
+
+02:28.880 --> 02:34.460
+So yes and if it's equal to true then we know we've got a correct answer.
+
+02:34.480 --> 02:36.130
+And we do something here.
+
+02:36.130 --> 02:39.160
+Otherwise we know that the answer is incorrect.
+
+02:39.340 --> 02:41.890
+And then we do something else.
+
+02:41.950 --> 02:45.300
+So what we can do is we could do answers
+
+02:47.840 --> 02:54.760
+and let me or answers wrong it should be.
+
+02:54.760 --> 02:57.430
+And that one is going to increment otherwise.
+
+02:57.430 --> 03:00.580
+So if we get it wrong then our score will change.
+
+03:00.580 --> 03:02.230
+So it's a lot less that we need to do.
+
+03:02.230 --> 03:08.800
+We need to update our score so we can simply grab that score.
+
+03:08.890 --> 03:16.840
+We're going to get element by ID document get element by id and that's score
+
+03:19.690 --> 03:21.950
+and we can do in inner age to Mel
+
+03:24.510 --> 03:27.330
+and not enter each to Mel so we can do
+
+03:29.840 --> 03:37.690
+correct and then we'll add in that value for correct and we'll also do wrong.
+
+03:39.430 --> 03:44.250
+And again I'm sure you could make it look a whole lot nicer than what I'm doing.
+
+03:45.280 --> 03:51.480
+So we're just looking at functionality at this point and don't spend too much time on the styling.
+
+03:51.490 --> 03:54.500
+So let's try the soat.
+
+03:54.820 --> 04:00.040
+So every time we get it wrong you see the wrong is increasing every time we get it right the correct
+
+04:00.040 --> 04:01.180
+is increasing.
+
+04:01.180 --> 04:08.500
+So what we need to do is we need to maybe get rid of these selections and output whether it's right
+
+04:08.500 --> 04:12.420
+or wrong within there so we can actually even select anything else.
+
+04:14.270 --> 04:21.020
+We could also look through these elements and see which one is has an attribute of true and we could
+
+04:21.020 --> 04:24.020
+return that as the correct value if we want it to.
+
+04:24.170 --> 04:29.680
+Or we could hold the correct value within the div as well within an attribute.
+
+04:29.730 --> 04:31.380
+So let's do the latter part.
+
+04:31.440 --> 04:34.950
+So next let's add in a little bit more functionality into this.
+
+04:34.950 --> 04:38.260
+And also we can really easily just apply some styling.
+
+04:38.370 --> 04:47.470
+So the category doesn't have to be big within the styling so font size and this one will make fairly
+
+04:47.470 --> 04:47.920
+small
+
+04:50.970 --> 04:53.670
+and for the question I want to make that pretty big.
+
+04:53.880 --> 04:54.880
+So let's.
+
+04:57.050 --> 05:04.290
+And so font size for this one is going to be 1.5.
+
+05:04.360 --> 05:05.900
+So make it pretty vague.
+
+05:06.010 --> 05:15.250
+So they're going to be different there so our question and we probably don't even need this question
+
+05:15.250 --> 05:16.160
+thing here.
+
+05:16.540 --> 05:20.800
+We can get rid of that so we can clear that out.
+
+05:23.400 --> 05:29.730
+So we've got our score and by default we should have a score value that matches with what we're outputting
+
+05:29.730 --> 05:30.440
+here.
+
+05:30.720 --> 05:31.320
+Wrong.
+
+05:31.380 --> 05:32.850
+Zero.
+
+05:34.050 --> 05:39.140
+And really truly there's a lot of ways to style this way better.
+
+05:39.160 --> 05:43.070
+So where we are ready to move on to the next step.
+
+05:43.210 --> 05:48.330
+So go ahead and add these updates into your code.
+
+05:48.800 --> 05:53.860
+And next you can also take some more time style it make it look a little bit better.
+
+05:53.990 --> 06:01.430
+And next we're going to tweak it so that whenever the user selects an answer that we provide what the
+
+06:01.430 --> 06:02.300
+correct answer was.
+
+06:02.300 --> 06:03.590
+So it's coming up next.

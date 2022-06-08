@@ -1,0 +1,271 @@
+WEBVTT
+
+00:00.280 --> 00:05.910
+In the previous lesson we saw how we can get the questions how we can put them in h t m l and now it's
+
+00:05.910 --> 00:12.390
+time to ask and build out the buttons and then we can attach the scoring and complete our application.
+
+00:12.390 --> 00:14.570
+So this is working properly.
+
+00:14.610 --> 00:17.490
+We see we're getting all of this information being returned.
+
+00:17.490 --> 00:18.880
+We've got correct answer.
+
+00:18.960 --> 00:26.000
+We've got incorrect answers so we can basically build out an array with correct and incorrect answers.
+
+00:26.190 --> 00:28.190
+And that way we can build the buttons.
+
+00:28.200 --> 00:30.620
+We have enough content to build out those buttons.
+
+00:30.750 --> 00:38.180
+So we are missing one thing and that's an output area in our HD M-L to load our button content.
+
+00:38.220 --> 00:42.530
+So I'm going to create that now so select and we'll just call it select answers
+
+00:46.010 --> 00:47.330
+and we'll leave that blank.
+
+00:47.660 --> 00:57.600
+So let's go into our H.T. Amelle Let's go into our javascript and build the set.
+
+00:57.620 --> 01:02.290
+So last time we left off building out our H.T. a mail object.
+
+01:02.360 --> 01:08.240
+So now we're ready to update that and we can leave that in the next part of it is to build out a function
+
+01:08.300 --> 01:10.780
+that's actually going to add and build buttons.
+
+01:10.790 --> 01:12.440
+So let's set that up.
+
+01:12.440 --> 01:22.820
+So we'll call it question builder and we'll take in a few parameters we'll get the correct and incorrect
+
+01:22.910 --> 01:24.070
+values.
+
+01:24.140 --> 01:30.520
+So it's going to be passed into there and then over here we just need to simply output that.
+
+01:30.540 --> 01:31.960
+So let's do a question.
+
+01:31.980 --> 01:36.300
+Builder and passing that information.
+
+01:36.310 --> 01:38.650
+So we've got it within an object format.
+
+01:38.650 --> 01:41.460
+We've got the correct answer.
+
+01:42.130 --> 01:44.440
+Underscore answer.
+
+01:44.710 --> 01:54.180
+And then we also have an array of incorrect answers and this one is answers so it's plural and we need
+
+01:54.180 --> 01:58.110
+to attach that object to it as well.
+
+01:58.110 --> 02:00.900
+So we go through object incorrect answers.
+
+02:01.020 --> 02:05.190
+And this is where we're going to build out the question because we need to attach event listeners to
+
+02:05.190 --> 02:05.660
+this.
+
+02:05.730 --> 02:09.620
+So we can't do it in a simple to M-L because it doesn't always work great.
+
+02:09.660 --> 02:13.950
+And then we'd have to run and loop through and add all of our listeners.
+
+02:13.950 --> 02:15.510
+That doesn't always work really well.
+
+02:15.530 --> 02:20.490
+We have to build out those elements within javascript and loop through them.
+
+02:22.870 --> 02:27.870
+So now that we're getting this information passed in let's create an array we'll just call it Holder
+
+02:28.600 --> 02:32.450
+and this survey is going to get the incorrect values.
+
+02:32.950 --> 02:40.360
+And for now let's just console log out that Holder array and this is what we're actually going to work
+
+02:40.360 --> 02:41.830
+with.
+
+02:41.980 --> 02:46.220
+So let's refresh and see how Sierre check out our progress.
+
+02:46.240 --> 02:49.960
+So click the button and we build out an array.
+
+02:50.440 --> 02:54.730
+So right now these are all true or false.
+
+02:54.910 --> 03:00.700
+And we'll get rid of the boolean value type so you can also specify that within the object so they could
+
+03:00.700 --> 03:04.010
+be true or false or they could be multiple choice.
+
+03:04.150 --> 03:07.620
+So it actually doesn't matter because either way we can build out there.
+
+03:07.780 --> 03:12.140
+And notice that we do have one thing missing in the array and that's the correct answer.
+
+03:12.160 --> 03:19.510
+So let's add that one and we can really easily add that in with javascript's So we've got holder using
+
+03:19.510 --> 03:20.370
+push.
+
+03:20.800 --> 03:24.550
+And then here is where we specify that correct answer.
+
+03:24.550 --> 03:25.850
+So we'll add that one in.
+
+03:25.930 --> 03:29.730
+So click.
+
+03:29.730 --> 03:30.200
+So there we go.
+
+03:30.210 --> 03:32.190
+So we've got the correct answer.
+
+03:32.200 --> 03:35.360
+Add it in along with the incorrect answers.
+
+03:38.340 --> 03:41.210
+And now let's sort that array.
+
+03:41.580 --> 03:42.930
+So you can also add in
+
+03:45.940 --> 03:48.660
+an array shuffle or something like that as well.
+
+03:48.760 --> 03:51.930
+So for now we're going to keep it really simple we're just going to sort the array.
+
+03:51.940 --> 03:56.500
+So the correct answer always isn't the last one because in this case it is.
+
+03:56.740 --> 03:58.110
+So we don't want that to happen.
+
+03:58.120 --> 04:02.760
+We want to have a little bit of a randomising and make it a little bit harder for users to guess.
+
+04:02.770 --> 04:06.130
+So what it's going to do now it's just going to sort it in alphabetical order.
+
+04:06.250 --> 04:11.500
+So just to keep things simple and of course you can add that in functionality and at a later point to
+
+04:11.500 --> 04:13.790
+randomize the order of the array.
+
+04:14.580 --> 04:16.290
+So let's try that out now.
+
+04:16.500 --> 04:17.720
+So refresh.
+
+04:18.300 --> 04:23.070
+So this time the correct answer shouldn't always be at the end.
+
+04:23.070 --> 04:25.690
+In that case it was this case.
+
+04:25.710 --> 04:27.790
+Correct answer is the third one.
+
+04:27.990 --> 04:28.680
+So that's great.
+
+04:28.680 --> 04:34.880
+So next we're ready to actually to add this into our H.T. amount.
+
+04:34.880 --> 04:40.760
+So let's create an object in order to hold that element data.
+
+04:40.800 --> 04:48.060
+So a get element by id and the name of the elements was what answer.
+
+04:48.060 --> 04:52.200
+So grab that there just to make sure that we are grabbing the right one.
+
+04:52.620 --> 04:54.910
+And it was select answers.
+
+04:55.380 --> 04:58.090
+So it's always good to double check those element names.
+
+04:58.300 --> 05:02.550
+And what we want to do first off is we want to clear that out.
+
+05:03.060 --> 05:08.950
+So let's set that in or h t m l and we'll just set it to blank to clear it out to empty it.
+
+05:09.450 --> 05:14.130
+And I know we don't have anything in there but we are going to be adding all of the buttons and we don't
+
+05:14.130 --> 05:19.200
+want the buttons to continuously build up there so we want to clear that out when we get the opportunity.
+
+05:20.940 --> 05:26.940
+So the thing that we need to add in here as well is we want to add in a function that's going to fire
+
+05:26.940 --> 05:33.890
+off whenever the user clicks one of these buttons and it's going to send the answer or check the answer.
+
+05:35.410 --> 05:40.400
+And we're going to grab the information set it up as an attribute.
+
+05:40.420 --> 05:43.880
+So for now let's just log out that event.
+
+05:44.040 --> 05:54.040
+Target and this and Javascript will simply because we're adding an event listener to these elements
+
+05:54.550 --> 05:59.790
+we can use event target to grab whatever element initiated that event.
+
+06:01.380 --> 06:03.310
+We're not having any problems there's no issues.
+
+06:03.360 --> 06:05.140
+So we're ready to go on to the next lesson.
+
+06:05.310 --> 06:08.660
+So add this into your application using your editor.
+
+06:08.820 --> 06:16.890
+And next lesson we're going to create that dynamically create the buttons with the answers that the
+
+06:16.890 --> 06:17.760
+user can select.
+
+06:17.760 --> 06:18.880
+So that's coming up.

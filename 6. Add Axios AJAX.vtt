@@ -1,0 +1,211 @@
+WEBVTT
+
+00:00.240 --> 00:04.410
+Are you ready to add another option within our Ajax tester.
+
+00:04.530 --> 00:10.320
+So this time we're going to be adding an actual library promised based HTP client for browsers and for
+
+00:10.320 --> 00:12.680
+Noad works great works wonderfully.
+
+00:12.690 --> 00:18.630
+And this is a really lightweight one focused on just making AJAX calls they've got some examples here
+
+00:18.870 --> 00:22.660
+within their get hub page and there's even more customization.
+
+00:22.860 --> 00:24.680
+So I ought to grab the Cdn.
+
+00:24.750 --> 00:31.140
+There's a number of ways to get CDN and I'm just going to Cdn G-S dot com and they've got a number of
+
+00:31.140 --> 00:33.580
+the most recent CDN listed.
+
+00:33.750 --> 00:41.520
+So let's grab our script tag go down here and let's just put it right underneath our g Querrey.
+
+00:41.950 --> 00:42.390
+So there we are.
+
+00:42.390 --> 00:45.050
+So we've got X-ers library.
+
+00:45.060 --> 00:51.540
+So next we need to set that up within our coding so we know we've already got that selection in the
+
+00:51.540 --> 00:52.440
+dropdown.
+
+00:52.770 --> 00:59.890
+So it's as easy as copying out exactly what we did over here for a query and now we've got a new case.
+
+00:59.910 --> 01:09.780
+So this time this time we're going to be looking for a value value of CEOs and let's add that one in
+
+01:09.780 --> 01:10.200
+there.
+
+01:10.200 --> 01:18.450
+We're just going to give this one a X. How about a function go down to where we've got our functions.
+
+01:18.840 --> 01:26.010
+And this is a promise based one so this is going to be another really short one copy of the query and
+
+01:26.010 --> 01:27.710
+I'll just put put it here at the top.
+
+01:27.750 --> 01:30.810
+So we're going to passen that you are ill as well.
+
+01:30.810 --> 01:34.920
+I can get rid of these Konsole lugs worked because we know that they're all working.
+
+01:34.980 --> 01:39.500
+So it's just taking up excess space right now.
+
+01:39.640 --> 01:42.200
+And this is going to be a little bit different.
+
+01:42.300 --> 01:43.580
+So let's set that up.
+
+01:43.770 --> 01:51.680
+So we're using that X-ers object and we're going to wrap all of that information in there.
+
+01:51.930 --> 02:00.750
+So we've got a few parameters here so method so we can specify method just like we did with Jay Querrey.
+
+02:01.020 --> 02:04.610
+You r l we need to specify it within this object.
+
+02:04.620 --> 02:06.650
+So there's a bunch of parameters that we can have here.
+
+02:08.060 --> 02:13.880
+And that's it for now and of course if we are posting we could have another parameter there for data.
+
+02:14.000 --> 02:15.130
+So promise based.
+
+02:15.170 --> 02:23.670
+So we're using then and then once we retrieve that response then we take some type of action.
+
+02:23.680 --> 02:28.700
+So that's that response information and that's this part over here.
+
+02:28.720 --> 02:38.990
+So let's get rid of Ajax is confusing us and we're outputting that response information and the responses
+
+02:39.010 --> 02:39.790
+coming in.
+
+02:39.790 --> 02:42.070
+So there's a huge response object.
+
+02:42.400 --> 02:47.920
+So we'll just start with the console log in it for now so you can take a closer look at that object
+
+02:47.920 --> 02:49.830
+and then we can get rid of that afterwards.
+
+02:49.840 --> 02:52.900
+So within the response we also have a status.
+
+02:52.900 --> 03:00.090
+So make use of that and we'll also specify that this is accedes response.
+
+03:00.160 --> 03:04.330
+So I think we are ready to try that it's hooked up pretty quickly.
+
+03:05.710 --> 03:11.180
+Open up our browser back to our testing application and this time let's see what happens.
+
+03:11.190 --> 03:11.650
+So.
+
+03:11.710 --> 03:13.230
+So we got the data.
+
+03:13.270 --> 03:15.700
+Same thing as we got with javascript.
+
+03:15.700 --> 03:17.950
+Same thing as we got with the query.
+
+03:18.040 --> 03:22.540
+We've got a status value there and we've got our response message.
+
+03:22.540 --> 03:24.910
+So this is what I meant by the response.
+
+03:24.940 --> 03:27.580
+So it's got a lot of information that's got headers.
+
+03:27.640 --> 03:34.460
+It's got the request object there so same because it is at the core of it it still uses the SML HGP
+
+03:34.630 --> 03:35.320
+request.
+
+03:35.440 --> 03:39.030
+Same thing as javascript so where we're getting all of that same stuff here.
+
+03:39.220 --> 03:44.880
+We've got the response text so everything that we see within the HTP request is sitting in here.
+
+03:45.130 --> 03:48.310
+And then it breaks it down so it breaks down the data.
+
+03:48.310 --> 03:52.450
+So if it's Giese on formatted it formats it within a chase on object.
+
+03:52.540 --> 03:54.190
+So it's really nice to have.
+
+03:54.850 --> 03:56.960
+And then there's also the status.
+
+03:56.980 --> 04:00.520
+So this is the same status that we've got in the request.
+
+04:00.520 --> 04:04.530
+So we could have gotten requests status but it keeps the status on the outside.
+
+04:04.540 --> 04:11.050
+So for cases like what we're using right now that we've got our status right there within that response
+
+04:11.050 --> 04:11.710
+object.
+
+04:11.950 --> 04:12.550
+So that's it.
+
+04:12.550 --> 04:17.780
+So that was all we had to do to hook that went up really nice easy to use library.
+
+04:17.920 --> 04:19.640
+And now it's up to you.
+
+04:19.810 --> 04:21.670
+So go ahead and bring the Cdn.
+
+04:21.730 --> 04:32.410
+Or download the axioms G-S file to your local machine and hook up ASIO's to send an Ajax request to
+
+04:32.410 --> 04:39.330
+the server or to the Eurail that we've specified within the input and next but not least we're going
+
+04:39.360 --> 04:40.440
+to fetch.
+
+04:40.480 --> 04:46.540
+So we've got one more to hook in and then we can look at posting and we can look at how we can customize
+
+04:46.540 --> 04:51.070
+this mini application testing application even further.
+
+04:51.070 --> 04:53.350
+So all of that is still yet to come.

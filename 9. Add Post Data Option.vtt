@@ -1,0 +1,292 @@
+WEBVTT
+
+00:00.780 --> 00:04.460
+All right we are ready to add in posts.
+
+00:04.470 --> 00:07.600
+So right now everything is working as expected.
+
+00:07.620 --> 00:13.410
+We've got all four each x methods hooked up and ready to go in our test drop location.
+
+00:13.410 --> 00:19.260
+So now let's update this and add in the ability to select different methods.
+
+00:19.260 --> 00:27.060
+So we want to keep the ability to do that to select the resource but we also want the user to be able
+
+00:27.060 --> 00:30.070
+to select a method.
+
+00:30.540 --> 00:33.990
+So we give it an ID and we'll call it method.
+
+00:35.340 --> 00:38.160
+And then here let's add in some options.
+
+00:38.190 --> 00:45.870
+So first option value is going to be get and we're going to make this one selected and then the next
+
+00:45.960 --> 00:47.870
+option value we've got.
+
+00:47.870 --> 00:56.680
+Post of course and this way we give the user the option to select GET or POST.
+
+00:57.990 --> 01:02.530
+And typically with post we want to send some data over as well.
+
+01:02.550 --> 01:04.050
+So let's take care of that.
+
+01:04.080 --> 01:06.820
+So we need some additional fields here.
+
+01:07.050 --> 01:18.900
+So input type text and maybe this can be first or something like that will just give it a name for a
+
+01:18.900 --> 01:21.400
+first name or whatever we want to call it.
+
+01:24.780 --> 01:29.040
+And next let's add an input type text.
+
+01:29.340 --> 01:36.550
+And this one is going to be let's give it a number.
+
+01:37.680 --> 01:40.960
+And of course we know that with inputs they're strings anyway.
+
+01:41.490 --> 01:45.510
+We don't need to have a submit button because we're just going to be grabbing all of the form data.
+
+01:45.630 --> 01:50.700
+So it actually doesn't matter how many fields you have here how many input fields we're going to serialize
+
+01:50.700 --> 01:55.720
+them and send them over make use of them within our posts also.
+
+01:55.950 --> 02:02.250
+So we've got our button there and we need to make some updates to this meek request function as well
+
+02:02.490 --> 02:05.550
+because now we've got some more parameters there to look at.
+
+02:05.580 --> 02:10.940
+So we just added in two more parameters.
+
+02:11.220 --> 02:25.960
+So let's grab our method so documents and query selector and this time let's make sure we hash it because
+
+02:26.200 --> 02:27.160
+we give it an ID
+
+02:30.110 --> 02:31.080
+value.
+
+02:31.580 --> 02:33.890
+And also we've got some form data.
+
+02:33.890 --> 02:46.080
+So we're going to do form and we're going to use the javascript form data object so form data and we
+
+02:46.080 --> 02:49.380
+also need to specify where we're getting this data from.
+
+02:49.380 --> 02:52.490
+So the element that we're picking that up from.
+
+02:52.530 --> 02:53.730
+So let's do that as well.
+
+02:53.730 --> 03:05.210
+So I just I gave it a quick name there let's do a document query selector and we only have the one form
+
+03:05.600 --> 03:08.510
+we could actually give it an ID maybe to be more specific
+
+03:11.980 --> 03:14.200
+and update that over here as well.
+
+03:14.200 --> 03:25.280
+So life form sort of grabbing that entire object and we're using the javascript form data to format
+
+03:25.280 --> 03:28.130
+that within a data format that we can send over.
+
+03:28.400 --> 03:31.550
+So next what we want to do so we've got all of this working
+
+03:34.220 --> 03:41.050
+and we can send over the URL and we've got some more parameters to send over as well.
+
+03:41.210 --> 03:48.620
+So we also have our method and we also have our form information and all three of these parameters we're
+
+03:48.620 --> 03:50.810
+sending over and each one of the cases
+
+03:54.350 --> 03:57.710
+and the Dow now down within these functions.
+
+03:57.710 --> 03:59.460
+This is where we got to make use of them.
+
+03:59.660 --> 04:03.520
+So we've got to update some of our codes so let's take it one by one.
+
+04:03.530 --> 04:08.180
+So the first one that we're updating Let's update our javascript first
+
+04:11.010 --> 04:17.420
+so we've got fetch a X-ers G query and this is the one that we want to update
+
+04:20.220 --> 04:30.510
+so within that javascript just plain javascript object we need to check to see if it's a post or if
+
+04:30.510 --> 04:31.370
+it's a get.
+
+04:31.710 --> 04:35.710
+And the only difference here is going to be the way that we send this method.
+
+04:35.820 --> 04:42.980
+So let's check to see if method is equal to get.
+
+04:43.200 --> 04:47.870
+And if it is equal to get then we can just do the one that we used already.
+
+04:50.950 --> 04:56.380
+And we can also let's also keep send in there as well.
+
+04:56.620 --> 05:03.820
+It doesn't actually matter if you were to to add the data to send the data in a GET request.
+
+05:03.970 --> 05:05.080
+It doesn't actually matter.
+
+05:05.080 --> 05:07.780
+But for this case we're just separate them.
+
+05:08.320 --> 05:09.730
+And in this case
+
+05:12.460 --> 05:19.770
+that means that it's a post and for a post we're going to format it as post and then we've got our form
+
+05:19.890 --> 05:22.200
+information that we're going to send with in there.
+
+05:22.660 --> 05:23.910
+So that's the only difference.
+
+05:23.920 --> 05:24.900
+So that's it.
+
+05:24.940 --> 05:29.260
+And we can also check to see status.
+
+05:29.260 --> 05:34.210
+So let's break this up because the status when we post is going to be two old Once it's not going to
+
+05:34.210 --> 05:35.550
+be 200.
+
+05:35.560 --> 05:37.670
+So let's break this one up as well.
+
+05:39.550 --> 05:51.380
+So we know that if it's ready state for that we can do our check and let's add an else if and we're
+
+05:51.380 --> 06:00.440
+going at this time we'll check to see if the ex-teachers status is to a one and if it is then we can
+
+06:00.440 --> 06:04.970
+say I did and everything else can stay the same.
+
+06:08.460 --> 06:11.630
+And then lastly let's do one more else.
+
+06:12.490 --> 06:15.310
+And over here is if we have an error.
+
+06:15.420 --> 06:23.460
+So this is if we made the connection but we didn't have a status of 200 and we didn't have a status
+
+06:23.550 --> 06:26.850
+of two or one that we know that we threw an error.
+
+06:26.850 --> 06:32.770
+So this is going to be basically our fail or we can just call it javascript error.
+
+06:35.730 --> 06:42.690
+So let's clean up the code and go out to the browser and let's try this out.
+
+06:44.240 --> 06:46.550
+So we've got one problem there already.
+
+06:46.580 --> 06:49.940
+So we've got too many brackets here.
+
+06:57.450 --> 06:59.110
+And let's try that again.
+
+06:59.220 --> 07:01.230
+As a matter of too many of the brackets
+
+07:03.980 --> 07:06.180
+so it's do javascript post.
+
+07:06.180 --> 07:06.790
+So there we go.
+
+07:06.810 --> 07:10.640
+So we posted and this time I notice that it says create it.
+
+07:10.650 --> 07:14.090
+So if I switch that back to get we don't have to create it.
+
+07:14.100 --> 07:16.210
+So it is taking it as a post.
+
+07:16.380 --> 07:22.310
+And when I do post we can see that we've got javascript added.
+
+07:22.320 --> 07:24.660
+We've got the tool one we've got created.
+
+07:24.750 --> 07:27.820
+So all of that is being sent through properly.
+
+07:27.930 --> 07:35.310
+So the other thing that we can do as well is we can hook up the other libraries and fetch in order to
+
+07:35.310 --> 07:36.780
+do posts as well.
+
+07:36.930 --> 07:39.040
+So that's coming up in the next lesson.
+
+07:39.090 --> 07:45.840
+So for now we've got quite a few updates that we've made to our input form as well as we've updated
+
+07:45.960 --> 07:47.210
+that javascript
+
+07:51.580 --> 07:55.190
+in order to respond to the get and posts.
+
+07:55.270 --> 07:58.070
+So go ahead and make those updates as well.
+
+07:58.120 --> 08:01.890
+And coming up I going to show even more cool things that you can do.
+
+08:02.020 --> 08:06.980
+And we're going to update the posts in the other methods as well.
+
+08:08.660 --> 08:12.930
+We're going to update the posts in the other Ajax formats as well.
+
+08:12.950 --> 08:13.610
+So it's coming up.

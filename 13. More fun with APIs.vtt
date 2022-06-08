@@ -1,0 +1,271 @@
+WEBVTT
+
+00:00.270 --> 00:02.700
+Let's look at some other AP eyes.
+
+00:02.760 --> 00:06.630
+Now some of them that you encounter will have these coures errors.
+
+00:06.690 --> 00:14.130
+So this one in particular the quotes on design doesn't work very well within local and you have to use
+
+00:14.130 --> 00:16.150
+the Jason P format here.
+
+00:16.200 --> 00:20.320
+So we're going to do is we're going to do this and build this out on code.
+
+00:20.850 --> 00:28.110
+I've stripped away a lot of what we had earlier within that application and I've brought in random user.
+
+00:28.290 --> 00:32.350
+So let's quickly look through this API and then we'll jump into cold pen.
+
+00:32.430 --> 00:36.070
+So we see that we're returning information back in results.
+
+00:38.190 --> 00:43.290
+So refresh and results is where the content is that we're looking at.
+
+00:43.290 --> 00:49.080
+And the same thing with the trivia database that we can break it down into data results.
+
+00:49.190 --> 00:52.210
+And then this is where all that information is that we're after.
+
+00:52.260 --> 00:57.600
+So we can really easily select any piece of this information and then output it and make use of it so
+
+00:57.600 --> 01:01.190
+we could do something like the name that first name.
+
+01:01.290 --> 01:05.250
+So we could do name and first
+
+01:08.200 --> 01:12.080
+and plus space space plus.
+
+01:12.130 --> 01:15.320
+And then the same thing again but this time writing last
+
+01:18.240 --> 01:19.470
+and the save that.
+
+01:19.500 --> 01:23.090
+So now within the console we get some random people's names.
+
+01:23.370 --> 01:26.270
+So it's as easy as that to work with different API.
+
+01:26.400 --> 01:32.580
+And as mentioned we want to look at the quote database and this one is a little bit more tricky when
+
+01:32.580 --> 01:34.020
+we're doing it within local.
+
+01:34.260 --> 01:39.740
+So we can't really easily bring in the quote information but is actually in a function.
+
+01:39.930 --> 01:44.480
+So we can see it when we go into the browser.
+
+01:45.580 --> 01:46.610
+So we do this.
+
+01:46.720 --> 01:54.790
+We see that we get random quotes but if I was to take that same you are l and if we just Konsole log
+
+01:54.790 --> 01:59.430
+out the data I'll comment this one.
+
+01:59.450 --> 02:02.450
+I will rewrite it there.
+
+02:03.410 --> 02:12.320
+So if we console log the data we're going to run into a coures error and we've got to start in that
+
+02:12.320 --> 02:12.650
+quote.
+
+02:12.680 --> 02:20.450
+So refresh and we see that what we're running into is this no access control header problem.
+
+02:20.900 --> 02:27.440
+And even if we try to parse it out as Jason we can see that we're still going to run into a problem.
+
+02:27.440 --> 02:33.710
+So let's bring this over into code Pentz open up code pen so-called pen is really useful as well for
+
+02:33.710 --> 02:44.430
+practicing with Ajax because this gets you around a lot of these problems so you can sign up for a pen.
+
+02:44.450 --> 02:45.720
+You don't have to pay anything.
+
+02:45.740 --> 02:48.240
+It's just all of your posts are public.
+
+02:48.260 --> 02:50.510
+If you do pay then they will be private.
+
+02:50.540 --> 02:56.130
+You can set up private posts as well so just call it Ajax.
+
+02:56.240 --> 03:00.770
+So let's add all of our h t m l.
+
+03:00.940 --> 03:06.450
+That's kind of one of the nice things about it is I can copy all of my body information so I don't have
+
+03:06.450 --> 03:09.070
+to split it off and put stuff in javascript.
+
+03:10.060 --> 03:13.150
+Of course there is that option there for the javascript as well.
+
+03:14.980 --> 03:23.500
+So let's see what happens when we click at and we'll see what we get output into the console and we
+
+03:23.500 --> 03:25.130
+need to also update.
+
+03:25.500 --> 03:27.690
+So this is the API value that we're grabbing
+
+03:32.180 --> 03:33.780
+So update our your all
+
+03:38.000 --> 03:40.170
+save and we'll try the soat
+
+03:44.020 --> 03:50.000
+and we can also use the regular cons. If we want.
+
+03:50.240 --> 03:57.400
+And so we're getting this mixed content issue because we're loading and secure data over secure.
+
+03:57.770 --> 03:59.340
+So that's always not great.
+
+03:59.660 --> 04:01.040
+So we get rid of that.
+
+04:01.130 --> 04:07.480
+We can see that we're actually grabbing that content.
+
+04:07.510 --> 04:09.670
+So we're getting it within a nice object format.
+
+04:09.670 --> 04:11.170
+So I took care of that problem.
+
+04:11.200 --> 04:16.360
+So that's another problem that sometimes you do run into because that's a good thing about code pen
+
+04:16.710 --> 04:23.710
+HTP s and some of the Web sites if you're trying to access them and if they're not secure then you can
+
+04:23.710 --> 04:31.990
+run into issues so you can just simply remove that HTP colon and just let it send whatever the best
+
+04:31.990 --> 04:34.590
+format is that it can pick that up.
+
+04:34.600 --> 04:35.140
+So there we go.
+
+04:35.140 --> 04:40.540
+So we're all ready to pull that content in and out put it in our output area.
+
+04:41.050 --> 04:45.390
+So let's actually move this all down to javascript.
+
+04:47.600 --> 04:51.880
+And separate it from our content there.
+
+04:51.890 --> 04:56.930
+And this is going to allow us to clean that up to tidy that up and make it a little bit bigger.
+
+04:56.940 --> 05:00.100
+I'll get rid of the console because we have it down below as well.
+
+05:02.050 --> 05:04.520
+So great so we're able to pick up this data.
+
+05:04.570 --> 05:12.340
+I can get rid of this console log stuff here and now what we can do is we can simply output that content
+
+05:12.340 --> 05:16.680
+that we're retrieving back.
+
+05:16.690 --> 05:22.570
+Let's first get rid of the parsing of Jason just to see if we can take a closer look at actually what's
+
+05:22.570 --> 05:29.570
+being returned back.
+
+05:29.610 --> 05:33.340
+So we see that it's being returned back within an array format.
+
+05:33.990 --> 05:45.080
+So when we parse it out as Jason we need to just simply return back that first item in the array.
+
+05:45.120 --> 05:45.570
+So there you go.
+
+05:45.570 --> 05:54.950
+So now we've got title content and we can output content into our output area and we already have that
+
+05:54.980 --> 05:56.710
+hooked up.
+
+05:56.720 --> 06:02.440
+So now it's just as easy as doing in her HVM mail.
+
+06:03.050 --> 06:07.750
+And now we know that data scenary.
+
+06:08.410 --> 06:12.100
+So if we don't get the content we just treated as an object
+
+06:16.250 --> 06:17.630
+so it happens so there we go.
+
+06:17.660 --> 06:20.820
+So we can really easily pull in that content.
+
+06:21.470 --> 06:25.010
+And then of course at this point we can style it and do even more.
+
+06:25.010 --> 06:28.650
+So we see that it's already got a little bit of styling there as well to it
+
+06:31.500 --> 06:34.100
+and obviously you can play around with it.
+
+06:34.110 --> 06:38.960
+But the main purpose of this lesson was to get more familiar with just different ways of working with
+
+06:38.970 --> 06:39.630
+API.
+
+06:39.870 --> 06:44.120
+Overcoming issues you might have with API it's very when you're working on local.
+
+06:44.400 --> 06:51.090
+You do run into those issues occasionally when you don't have control over what the server and passing
+
+06:51.090 --> 06:53.800
+it in over the Jaison data.
+
+06:53.800 --> 06:59.880
+So sometimes you do run into those cores as well as sometimes you run into those HTP errors as well.
+
+06:59.880 --> 07:01.790
+So go ahead try it for yourself.
+
+07:01.800 --> 07:07.860
+I'm going to go ahead and save this pen so you can go online and you could work with it and try it out
+
+07:07.860 --> 07:08.570
+for yourself.

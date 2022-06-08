@@ -1,0 +1,121 @@
+WEBVTT
+
+00:01.030 --> 00:06.720
+In the earlier lessons we saw how we can build out a quiz application from scratch just connecting to
+
+00:06.780 --> 00:08.550
+an API.
+
+00:08.570 --> 00:09.800
+It's now it's up to you.
+
+00:09.860 --> 00:11.150
+There's a number of different API.
+
+00:11.150 --> 00:12.290
+So they're on the web.
+
+00:12.320 --> 00:17.840
+There's a Star Wars API for instance that can pull information about Star Wars people.
+
+00:17.950 --> 00:24.470
+So we've got information about Luke Skywalker height mass blond hair skin color and so on.
+
+00:24.500 --> 00:30.770
+So you can make use of these various API is try them out and pull in that data and then output that
+
+00:30.770 --> 00:32.410
+data within your web page.
+
+00:32.420 --> 00:34.890
+There's also the random user api.
+
+00:34.930 --> 00:36.480
+So there's another really good one.
+
+00:36.580 --> 00:39.480
+I'm just going to listed in here as commented.
+
+00:39.800 --> 00:45.620
+So you could really easily just swap these out and try out different API is here and there's a number
+
+00:45.620 --> 00:47.550
+of ways to customize this.
+
+00:47.550 --> 00:53.390
+You can go into vehicles you have to go people you could go planets and you see all the information
+
+00:53.390 --> 00:54.850
+that gets returned back.
+
+00:54.920 --> 00:57.720
+You can just do planets by itself.
+
+00:57.830 --> 01:00.330
+And that's going to list out a whole count of them.
+
+01:02.950 --> 01:08.150
+So if you want to practice looping through multiple values you can do that as well here.
+
+01:08.170 --> 01:13.550
+So you've got results and then you can loop through all of those results as well.
+
+01:13.600 --> 01:20.020
+So go ahead try this for yourself and you can also see that there's a follow up page so page to page
+
+01:20.020 --> 01:26.370
+3 so you can practice looping through all the different pages as well and build the sauteing your application.
+
+01:26.410 --> 01:27.350
+Try it out.
+
+01:27.400 --> 01:31.660
+Practice working with Ajax and the various API that are online.
+
+01:31.700 --> 01:34.200
+You can always google for additional API.
+
+01:34.420 --> 01:40.090
+If you do run into some problems go out and try it out on code pen and see if that fixes any of the
+
+01:40.090 --> 01:42.640
+coures issues that you might be having locally.
+
+01:42.670 --> 01:44.350
+So they don't all work locally.
+
+01:44.440 --> 01:50.590
+So that's just a word of advice and some of them do need some type of authentication or token or a key.
+
+01:50.620 --> 01:52.900
+So always keep that in mind as well.
+
+01:52.900 --> 01:58.300
+So unless you've actually created the API you don't really have a whole lot of control on accessing
+
+01:58.300 --> 02:00.170
+it and making use for it.
+
+02:00.190 --> 02:03.720
+So you have to go through and filter through ones that work.
+
+02:03.730 --> 02:10.540
+So always try it first before you go through the trouble of building out all of the coding and try it
+
+02:10.540 --> 02:15.190
+out because it doesn't mean that necessarily if it works in your browser it's going to also work within
+
+02:15.190 --> 02:16.690
+your local application.
+
+02:16.720 --> 02:23.410
+So try it out first create a really simple Ajax request however you are l and then simply try it out
+
+02:23.410 --> 02:25.060
+and see if you can return the data.
+
+02:25.060 --> 02:29.110
+And if you can return the data then you're all good to continue to build the application
+
+02:31.630 --> 02:38.140
+also continue to practice with Ajax pulling in data and outputting it within your web page.

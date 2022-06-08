@@ -1,0 +1,340 @@
+WEBVTT
+
+00:00.740 --> 00:05.950
+Let's do an overview of the code that we used in order to build out our testing application.
+
+00:05.960 --> 00:10.420
+So it a little bit of styling there to make it look not as boring.
+
+00:10.640 --> 00:13.960
+And then up at the top we had our two male elements.
+
+00:13.970 --> 00:17.730
+So first of all we needed an input to grab you or else.
+
+00:17.780 --> 00:24.050
+Then also we needed the user to be able to select a source or a resource that we wanted to make our
+
+00:24.050 --> 00:29.180
+AJAX call what we know with Ajax there's Getz and posts a couple of different methods.
+
+00:29.270 --> 00:35.090
+So one of the user to be able to select that and if they're posting then we had a forum here with some
+
+00:35.090 --> 00:41.510
+inputs and these inputs are dynamic so we could add as many inputs as we want because we're serializing
+
+00:41.570 --> 00:49.640
+this form using a query serialise and then also we've got a button to trigger off our Ajax request.
+
+00:49.760 --> 00:55.190
+And then an output area to put that content we connected to two different libraries.
+
+00:55.220 --> 01:00.900
+Javascript libraries are very popular for Ajax So there's a query of course and X-ers.
+
+01:01.050 --> 01:05.370
+So there are two different libraries and we cooked them both up.
+
+01:05.390 --> 01:07.480
+So I've got linked to both of those.
+
+01:07.760 --> 01:15.290
+And then we needed to make sure that our dorm content loaded before we added in our listener to that
+
+01:15.320 --> 01:16.090
+input.
+
+01:16.130 --> 01:19.540
+So that's where we've wrapped it with the DOM content loaded.
+
+01:19.540 --> 01:26.730
+This is the same thing as the query does with Dot document ready and then we've got our event listener.
+
+01:26.750 --> 01:35.660
+So once the button gets clicked this button over here we send off and we trigger a request to make request
+
+01:35.660 --> 01:36.160
+function.
+
+01:36.170 --> 01:37.780
+So it's the first one we have here.
+
+01:37.940 --> 01:44.050
+Over here we grab some of those element information and we can get rid of this one as well.
+
+01:44.060 --> 01:51.530
+So the console logs we're using those in order to help work with our content with our Javascript.
+
+01:51.530 --> 01:53.430
+So we use a switch statement.
+
+01:53.660 --> 02:01.330
+So if it's a query that sends over to this function I close to this function fetch to this one and javascript
+
+02:01.340 --> 02:04.210
+to the last one that we built out the functions.
+
+02:04.580 --> 02:07.350
+So we've got our fetch function.
+
+02:07.460 --> 02:09.820
+First of all it checks to see if it's a post.
+
+02:09.920 --> 02:15.320
+If it's a post we need some parameters that we need to add into the request and that's the only real
+
+02:15.320 --> 02:19.360
+difference between the get and the post with the post we're sending over.
+
+02:19.360 --> 02:24.280
+Body method as well as headers by default it's going to use get.
+
+02:24.410 --> 02:29.600
+So we didn't have to worry about it when we were just using get where returning the content the response
+
+02:29.660 --> 02:37.850
+information in a Jaison format where catching any errors if they fail and then we're outputting a response
+
+02:37.910 --> 02:38.470
+here.
+
+02:38.510 --> 02:42.440
+If everything works properly and we're using a function that we created output.
+
+02:42.590 --> 02:48.710
+So this one allows us to nice and neatly output that content in nice visible format.
+
+02:48.710 --> 02:50.040
+So that's what we're doing over there.
+
+02:50.090 --> 02:52.250
+Next we looked at X-C always.
+
+02:52.340 --> 02:59.150
+So X-ers allowed us to do promises as well.
+
+02:59.210 --> 03:01.550
+But this is still using a char object.
+
+03:01.560 --> 03:07.310
+So the javascript S.H. are object whereas fetches newer technology so it's not using that anymore.
+
+03:07.310 --> 03:14.300
+And we needed to specify a method to your L data so it actually didn't matter if it's a get or a post
+
+03:14.300 --> 03:19.640
+if it's a get it will still take in that data and information even though it's not receiving it or it
+
+03:19.640 --> 03:24.060
+doesn't have the capability to receive it on the server and so it depends on the end point.
+
+03:24.230 --> 03:27.400
+Same thing we're outputting our response information.
+
+03:27.630 --> 03:30.850
+Jay Correy So we had our AJAX call and G.
+
+03:30.860 --> 03:33.530
+Cory we also up here we have our catch.
+
+03:33.530 --> 03:38.010
+So if it fails over here we have our catch if it fails and Jay query as well.
+
+03:38.360 --> 03:46.430
+We used that done so waited till we completed the AJAX call and then we looked at our response information
+
+03:46.710 --> 03:49.910
+send that back into output and Javascript was the same thing.
+
+03:49.910 --> 03:57.560
+So we're using that SML HTP request object we split off status from ready state because we know that
+
+03:57.650 --> 04:03.350
+whenever we submit we get a different status error so we get to a to 200 so we don't want to look for
+
+04:03.350 --> 04:03.830
+200.
+
+04:03.830 --> 04:05.480
+We want to look for two one.
+
+04:05.590 --> 04:07.210
+So that was the only real difference there.
+
+04:07.220 --> 04:13.850
+And then over here whenever we're setting up we're opening up that a char object that get was slightly
+
+04:13.850 --> 04:14.870
+different than the post.
+
+04:15.050 --> 04:17.000
+And we also had to specify headers.
+
+04:17.000 --> 04:21.680
+So we have a different content type and we need to set that within Javascript.
+
+04:21.680 --> 04:23.710
+And then over here we had the output.
+
+04:23.720 --> 04:27.200
+So this was basically outputting that content.
+
+04:27.200 --> 04:34.550
+And also I wanted to quickly add here that so we've got our output of the content and I wanted to console
+
+04:34.580 --> 04:36.940
+log out some of these values here.
+
+04:37.130 --> 04:44.090
+So let's do that and quickly do a quick update so that instead of just Konsole logging out the response
+
+04:44.090 --> 04:44.960
+text.
+
+04:45.110 --> 04:46.730
+Let's do a little bit more.
+
+04:46.760 --> 04:53.000
+So the response text could be in an object format and I'm going to do a console log and I'll make it
+
+04:53.000 --> 04:53.680
+colorful.
+
+04:53.690 --> 04:55.730
+So to do something a little bit different.
+
+04:55.850 --> 04:59.090
+So it's not the air plain old boring black text.
+
+04:59.090 --> 05:06.470
+So this time let's put the status and over here let's put the a.
+
+05:06.590 --> 05:14.920
+So we know that these are all coming in in text format so we can make them colorful with the objects.
+
+05:14.920 --> 05:18.580
+You can't make them colorful so you just do the percentage sign.
+
+05:18.600 --> 05:27.180
+See and you do that before you enter it and then you comma separated out so you can apply some stylings
+
+05:27.180 --> 05:33.670
+So let's make this one green and we'll do the same for the ex-teacher value.
+
+05:35.280 --> 05:42.420
+So this should brighten up our day within our consul and add that one and maybe for this one let's make
+
+05:42.420 --> 05:43.480
+this one read.
+
+05:43.590 --> 05:44.640
+So it's always going to be read.
+
+05:44.670 --> 05:47.270
+That one's always going to be green regardless.
+
+05:47.340 --> 05:48.110
+So that's it.
+
+05:48.120 --> 05:50.640
+And then we just put our text.
+
+05:50.730 --> 05:56.540
+We what we did over here is we check to see if it's a string format because we always want to do the
+
+05:56.540 --> 05:57.970
+Gees on string a fly.
+
+05:57.990 --> 06:05.220
+So if the response text is a string format then what we do is we turn it back into an object so that
+
+06:05.220 --> 06:06.780
+we can string a fight again.
+
+06:06.780 --> 06:10.830
+And if we didn't do that then we get a bunch of extra backslashes.
+
+06:10.830 --> 06:13.440
+So some of the responses.
+
+06:13.590 --> 06:21.060
+So the only one that was actually not converting it into adjacent object was the regular javascript
+
+06:21.160 --> 06:24.670
+SML HGP request.
+
+06:24.810 --> 06:29.370
+So that was the only one that was sending it in as text and the rest of them they were smart enough
+
+06:29.370 --> 06:34.520
+actually to know that there was a difference between Java Jaison and text.
+
+06:34.530 --> 06:35.840
+So now let's try it.
+
+06:35.850 --> 06:37.920
+So I've got a few other API.
+
+06:38.070 --> 06:44.400
+So we've got our default one here so we can make requests and there's are more colorful Konsole content
+
+06:45.210 --> 06:46.380
+go to get.
+
+06:46.380 --> 06:48.430
+We can make some requests there as well.
+
+06:48.540 --> 06:57.360
+Here's another API so we should be able to now just simply deposit new API eyes and get response information.
+
+06:57.390 --> 07:03.540
+That one worked and we can try it against jete query and we really shouldn't have any difference now
+
+07:03.540 --> 07:07.140
+because we've got them set up running the same way.
+
+07:07.140 --> 07:09.550
+So that's basically how we can do that.
+
+07:09.660 --> 07:11.610
+So it's try one more API.
+
+07:11.840 --> 07:17.710
+So these are just some open API eyes and you can literally now that you've got this application.
+
+07:17.790 --> 07:23.610
+You can try any one of the methods in order to make your AJAX calls and they all seem to be working
+
+07:23.670 --> 07:24.320
+nicely.
+
+07:24.390 --> 07:25.970
+These ones don't have posts.
+
+07:26.040 --> 07:28.710
+So we're going to run into an error if we try to post.
+
+07:28.770 --> 07:32.550
+So this one we've got an error through the error.
+
+07:32.610 --> 07:35.490
+This one throws the error down here in Javascript.
+
+07:35.490 --> 07:39.420
+So we get undefined basically for the response text.
+
+07:39.630 --> 07:40.590
+So now it's up to you.
+
+07:40.620 --> 07:46.620
+So go ahead try the sote use the code that we've provided in the lessons and try it for yourself.
+
+07:46.620 --> 07:48.770
+Also try different you or else.
+
+07:48.770 --> 07:54.870
+And this is now a good handy testing tool as well as it give you a lot of practice running and creating
+
+07:55.080 --> 07:57.130
+different types of Ajax requests.

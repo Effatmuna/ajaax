@@ -1,0 +1,187 @@
+WEBVTT
+
+00:01.610 --> 00:05.640
+There are no special libraries to add with fetch as we saw with the queen.
+
+00:05.660 --> 00:10.520
+Actually it was because this is javascript at the very core.
+
+00:10.590 --> 00:13.620
+So let's go ahead and add this one in as well.
+
+00:13.650 --> 00:21.300
+So we've got another case and this time we need to hook up just as we did with X-ers fetch.
+
+00:21.300 --> 00:31.500
+So if the user selects fetch then we're going to go Ajax Ephie and still passing in the URL and now
+
+00:31.530 --> 00:35.050
+let's go down here and let's build that function.
+
+00:37.690 --> 00:45.310
+Or we can copy one of the earlier ones that we did but we copy X-ers because actually is promised based
+
+00:45.310 --> 00:48.920
+as well so use it as our basic template.
+
+00:49.150 --> 00:51.760
+So the strictness of cleaning up a little bit.
+
+00:51.820 --> 00:58.170
+So with Ajax fetch we're doing Ajax Ephie.
+
+00:58.320 --> 01:06.060
+So the method is obviously not going to be X-ers it's going to be fetch.
+
+01:06.070 --> 01:11.790
+So let's let's get rid of some of this or we'll type it will get rid of it after so fetch.
+
+01:13.490 --> 01:17.350
+Specify that you are ill and this is promis space as well.
+
+01:17.360 --> 01:19.380
+So that's where we've got them.
+
+01:21.770 --> 01:22.810
+And function.
+
+01:22.850 --> 01:27.880
+So this is going to be that first initial response that we retrieve back.
+
+01:27.890 --> 01:34.070
+So what's happening here is it's doing fetch going to the L when it retrieves something something happens
+
+01:34.070 --> 01:41.410
+and that you are it retrieves some information it initiates the next promise and that's fetching the
+
+01:41.450 --> 01:49.550
+response data and it's got a function within it where we can do return and we can do response and it's
+
+01:49.550 --> 01:52.000
+got a built in method for it Jason.
+
+01:52.310 --> 01:57.050
+So that's what we ultimately want we want to return back as Giese on data.
+
+01:57.050 --> 01:59.880
+There's also a catch.
+
+01:59.890 --> 02:05.830
+So before we complete it it's always a good idea to catch any errors and we should add that into the
+
+02:05.830 --> 02:07.300
+other ones as well.
+
+02:07.300 --> 02:15.670
+So we just call it function and grab the air and in this case we're going to be returning back and let's
+
+02:15.730 --> 02:26.860
+use our output we'll pass in that error information and we need to have some values here for the response.
+
+02:27.080 --> 02:31.830
+And let's do fetch failed.
+
+02:32.360 --> 02:34.690
+Let's start customized response.
+
+02:34.700 --> 02:44.790
+So over here is if there's no problems then we go ahead and we do a function and we can call this response
+
+02:44.790 --> 02:45.280
+as well.
+
+02:45.300 --> 02:52.630
+We call it data to be different if we want to add here what we're doing is we're returning our output
+
+02:53.340 --> 03:00.660
+and this time because we've got our content within just on format we can return it as a response and
+
+03:00.660 --> 03:08.880
+I'm going to mimic the 200 because we know that this was okay and this is fetch Ajax.
+
+03:08.880 --> 03:11.180
+So I think we are ready to try that out.
+
+03:11.700 --> 03:14.560
+And of course we need to get rid of that part there.
+
+03:14.880 --> 03:23.810
+So let's do a quick cleanup of the code see that and open up her browser and we'll see if fecche works
+
+03:23.810 --> 03:24.040
+now.
+
+03:24.050 --> 03:25.780
+So go down to fetch.
+
+03:25.940 --> 03:27.230
+Make the request.
+
+03:27.230 --> 03:31.820
+We see that we've got the data Ajax fetch we're able to retrieve back the data.
+
+03:31.910 --> 03:33.830
+So everything looks the same.
+
+03:33.830 --> 03:36.330
+So we can go to javascript.
+
+03:36.410 --> 03:39.240
+The data is the same query.
+
+03:39.350 --> 03:43.830
+The data is the same as the data is the same.
+
+03:43.850 --> 03:50.520
+So within fetch we've got our response status over here.
+
+03:50.630 --> 03:53.540
+It's contained within this main response object.
+
+03:53.540 --> 03:58.370
+And because we're taking a response we're turning it into Jaison So we're doing a little bit of a trick
+
+03:58.370 --> 03:59.180
+over here.
+
+03:59.180 --> 04:04.370
+And normally you wouldn't be returning back the status if you are checking the status to make sure it's
+
+04:04.370 --> 04:05.210
+200.
+
+04:05.210 --> 04:06.320
+You do that over here.
+
+04:06.320 --> 04:13.550
+So this is where you would check status and take some type of action depending on what the statuses.
+
+04:13.550 --> 04:15.060
+So that's the difference over there.
+
+04:15.170 --> 04:20.080
+And we could potentially pass it through but it's going to add additional coding.
+
+04:20.150 --> 04:26.090
+So we're just going to keep it as is because normally you wouldn't be putting that status value anyway.
+
+04:26.660 --> 04:28.970
+So go ahead and try this out for yourself.
+
+04:29.030 --> 04:29.570
+Add in.
+
+04:29.570 --> 04:34.720
+Fetch into our dropdown and get that working.
+
+04:34.730 --> 04:38.340
+And next we're going to be adding in post.
+
+04:38.390 --> 04:45.530
+So our application is getting there we've got all of the GET requests hooked up and the Post ones are
+
+04:45.530 --> 04:48.710
+going to be a little bit more complex but we're going to make it work.
+
+04:48.710 --> 04:50.220
+So that's coming up in the next lesson.

@@ -1,0 +1,196 @@
+WEBVTT
+
+00:01.260 --> 00:06.010
+OK are you ready to add to fetch as well as CEOs.
+
+00:06.150 --> 00:08.120
+So it's going to be really easy.
+
+00:08.520 --> 00:15.190
+Let's do it the same way that we passed the parameters to a query as well as Ajax.
+
+00:15.300 --> 00:23.370
+We can pass it over to our fetch function as well as to our Axel's function so that we we get all of
+
+00:23.370 --> 00:30.180
+that information being passed and with fetch We need to set up an object because the only difference
+
+00:30.180 --> 00:37.290
+between the get and the post is that we actually pass some parameters and let's build those out.
+
+00:37.290 --> 00:39.330
+So we use a tear unary operator.
+
+00:39.570 --> 00:43.610
+So we've got a valid with a value within method.
+
+00:43.710 --> 00:51.570
+So we're going to check to see if it's equal to post and if it is equal to post that we need to build
+
+00:51.570 --> 00:58.780
+out our object and otherwise if it's not equal to post we can just leave that blank or we could just
+
+00:58.780 --> 01:00.260
+leave a blank object there.
+
+01:00.490 --> 01:01.920
+So it actually doesn't matter.
+
+01:02.470 --> 01:08.050
+So method this method is going to be post but we can specify that here as well because we're getting
+
+01:08.050 --> 01:11.640
+that in value for the value of method it's equal to post.
+
+01:11.650 --> 01:17.200
+We know it's already equal to post and where we pass that information.
+
+01:17.200 --> 01:19.510
+So that's passed within body.
+
+01:19.990 --> 01:26.230
+And then lastly we also need to add in headers so headers is going to be the same thing that we did
+
+01:26.500 --> 01:33.700
+down with javascript where we have to specify content type so that it knows what type of content type
+
+01:33.790 --> 01:34.720
+to expect.
+
+01:34.720 --> 01:39.610
+So this is an object within this object and the content type is going to be the same header that we
+
+01:39.610 --> 01:44.160
+used here for our javascript.
+
+01:44.320 --> 01:48.400
+Let's go up and update that one as well.
+
+01:48.400 --> 01:56.760
+So then fetch we've got Content-Type and I'll update this to be an object he paired value.
+
+01:57.250 --> 01:57.780
+So that's it.
+
+01:57.790 --> 02:03.470
+So we've got our headers and the headers match we've got the content we're passing in from form.
+
+02:03.490 --> 02:07.620
+So this is serialized content and it's in a form format.
+
+02:07.720 --> 02:09.560
+And we saw that being output there.
+
+02:09.670 --> 02:15.120
+Also we can take a closer look and we can see the way that it looks over here when we serialize that.
+
+02:15.130 --> 02:18.010
+So this is coming in from Gigue query.
+
+02:18.070 --> 02:20.360
+So it's refreshing and try it out.
+
+02:20.380 --> 02:22.420
+So we're ready to post with fetch.
+
+02:22.420 --> 02:22.920
+So there we go.
+
+02:22.920 --> 02:27.150
+So that's the content we're posting and that's what we're receiving.
+
+02:27.160 --> 02:33.520
+We've got our response text over here so we can see that we're actually posting content over it's being
+
+02:33.520 --> 02:34.390
+received.
+
+02:34.390 --> 02:36.290
+It works within fetch.
+
+02:36.310 --> 02:40.940
+It works within javascript and it works within the query.
+
+02:40.950 --> 02:42.010
+There's one last one.
+
+02:42.100 --> 02:44.780
+And let's not forget X CEOs.
+
+02:45.010 --> 02:51.450
+So in order to actually use the post is going to be similar again.
+
+02:51.450 --> 02:55.060
+So we know that we are already passing in the method value over here.
+
+02:55.590 --> 02:57.550
+So let's update that 2 method.
+
+02:57.600 --> 02:58.900
+So that's going to be posting.
+
+02:59.070 --> 03:04.470
+So we just need to specify the data that we're posting and this is just going to be another parameter
+
+03:04.470 --> 03:05.110
+here.
+
+03:05.160 --> 03:11.070
+So it doesn't even matter that if we're doing a get if we don't have any data and we're not posting
+
+03:11.070 --> 03:11.920
+anything.
+
+03:12.380 --> 03:13.370
+So let's try this out.
+
+03:13.410 --> 03:15.000
+We're going to post that data.
+
+03:15.210 --> 03:18.480
+And over here we should also have a catch.
+
+03:18.480 --> 03:20.060
+If it fails.
+
+03:21.400 --> 03:27.540
+So it's always a good idea to have these failures built in so that if something goes wrong you know
+
+03:27.540 --> 03:29.240
+that something has happened.
+
+03:29.250 --> 03:38.000
+So this is going to be an error and it's looks very similar to what we're doing with our with our fetch
+
+03:38.040 --> 03:39.540
+because again it's promises.
+
+03:39.570 --> 03:41.450
+So pretty much the same thing.
+
+03:41.760 --> 03:46.650
+So data status X CEOs and do fail.
+
+03:46.800 --> 03:49.230
+So everything seems to be working properly.
+
+03:49.230 --> 03:57.360
+We've got all of the responses there so the query javascript we can also try to get post to it and so
+
+03:57.360 --> 04:01.900
+on and then we're receiving that response Texas status and our response as well.
+
+04:01.980 --> 04:02.610
+So there we go.
+
+04:02.610 --> 04:11.490
+So we've got the ability to update and use any one of these Ajax formats in order to send requests over
+
+04:11.490 --> 04:17.010
+to you or else we're going to do an overview of the source code run through it as well as we'll try
+
+04:17.010 --> 04:18.810
+out some different or else as well.
+
+04:18.810 --> 04:19.810
+So it's coming up next.

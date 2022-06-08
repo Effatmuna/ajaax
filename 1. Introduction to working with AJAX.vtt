@@ -1,0 +1,76 @@
+WEBVTT
+
+00:00.300 --> 00:05.970
+With the upcoming lessons we're going to be working through a number of exercises to build out and make
+
+00:05.970 --> 00:08.190
+use of various web API.
+
+00:08.370 --> 00:14.460
+And then pull that content through and use that within our application so you can see here.
+
+00:14.460 --> 00:18.120
+Here's an example of one of the applications that we're going to be building out.
+
+00:18.120 --> 00:20.460
+It uses a quiz database.
+
+00:20.580 --> 00:26.680
+It connects to the database and we generate all of the stuff here dynamically with Javascript.
+
+00:26.790 --> 00:32.880
+So that includes these buttons here for the answers which give us the ability to click and detect if
+
+00:32.880 --> 00:33.980
+it was right or wrong.
+
+00:34.080 --> 00:41.730
+Also load additional questions and continue and we're also keeping track score with correct and wrong
+
+00:41.760 --> 00:42.670
+answers.
+
+00:42.690 --> 00:48.960
+So it's connected to a database that continuously loads more different questions and we've got categories
+
+00:48.960 --> 00:55.140
+for questions type of questions booleans multiple choice and also then of course the question and then
+
+00:55.140 --> 00:56.220
+we've got the correct answer.
+
+00:56.220 --> 01:01.540
+So this is coming into the console and we've done a little bit of styling to make it more presentable.
+
+01:01.770 --> 01:06.050
+So this is just one of the many API that are available online.
+
+01:06.060 --> 01:11.000
+And to truly become familiar with API is it's a great opportunity to work with them.
+
+01:11.010 --> 01:12.300
+Try it for yourself.
+
+01:12.300 --> 01:18.270
+Bring the content into your javascript and put it within the page within an application type format.
+
+01:18.300 --> 01:23.580
+So it's going to be a great learning experience to find out more about what Ajax can do and how to work
+
+01:23.580 --> 01:27.270
+with Jaison data that gets returned back from these various API.
+
+01:27.500 --> 01:30.750
+And making use of it within your web applications.
+
+01:30.930 --> 01:39.110
+We're also going to look at a few other API and work through various challenges that developers will
+
+01:39.110 --> 01:42.730
+have working with Ajax in Javascript.
+
+01:42.770 --> 01:49.220
+So all of this is coming up soon when you're ready let's jump right in and start building out this application
+
+01:49.220 --> 01:50.070
+from scratch.

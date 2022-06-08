@@ -1,0 +1,154 @@
+WEBVTT
+
+00:01.930 --> 00:06.240
+Let's update the other ones to receive posts as well.
+
+00:06.250 --> 00:12.430
+So we've already updated the content here that's being sent over to the Jay Querrey and I'm actually
+
+00:12.430 --> 00:14.170
+going to change this from form.
+
+00:14.170 --> 00:18.910
+I'm going to just call it form d so that we just have something different other than form.
+
+00:18.940 --> 00:23.240
+I don't like to use that exact value there.
+
+00:23.350 --> 00:24.110
+So this is the J.
+
+00:24.110 --> 00:27.600
+Corey one that we update it let's update the query.
+
+00:27.700 --> 00:31.930
+So Ajax query and we see that with Ajax query.
+
+00:32.020 --> 00:38.980
+So we're adding in a method type for a post and we can do this really easily with a query because we
+
+00:38.980 --> 00:44.160
+already have the method that's being sent over here so this is another parameter that's being sent.
+
+00:44.320 --> 00:52.060
+And we can also utilize data and let's grab the data from our HD M-L and we're going to just serialize
+
+00:52.060 --> 00:57.850
+it because requiring has this really cool functionality where we can serialize our data.
+
+00:57.940 --> 01:00.990
+So it makes it a lot easier to send that information over.
+
+01:01.000 --> 01:02.990
+We're not going to even make use of the form.
+
+01:03.190 --> 01:06.800
+We're just going to simply serialize the data from the form.
+
+01:06.910 --> 01:09.430
+And there's also the method that's being passed in.
+
+01:09.520 --> 01:13.710
+Also with the query I want to add in that option if it fails.
+
+01:13.900 --> 01:18.100
+So if something happens to our request it doesn't go through properly.
+
+01:18.160 --> 01:24.850
+We know that we've got a failure here so we'll do a query error and I'll pass through all of the rest
+
+01:24.850 --> 01:25.560
+of those.
+
+01:25.660 --> 01:28.340
+The response and the H.R. status as well.
+
+01:28.360 --> 01:31.120
+So that will come back as an error as well.
+
+01:31.120 --> 01:32.770
+So really that's all we have to do.
+
+01:32.790 --> 01:38.650
+For Jay Corey and this serialise actually is much better than the form.
+
+01:38.680 --> 01:42.930
+So let's update that and I'm going to simply serialize the form.
+
+01:42.930 --> 01:48.070
+I know that I've got some corn mixed in here with the javascript but this is going to provide much better
+
+01:48.070 --> 01:54.250
+functionality because the way that Jake Corey serialise works is it turns it into a form format.
+
+01:54.400 --> 02:00.180
+So serialise actually transforms that data on a console log out so it can take a closer look.
+
+02:00.220 --> 02:04.380
+It's going to transform it into form d form d is the same as serialise.
+
+02:04.390 --> 02:07.240
+Let's update it over here as well.
+
+02:07.240 --> 02:15.260
+And then lastly within the javascript we need to add in our response headers so we need to specify the
+
+02:15.260 --> 02:20.130
+content type and we can do that here when we're making our post.
+
+02:20.180 --> 02:28.080
+We can't open it up and then we can specify that the request headers content type is it for you or else
+
+02:28.080 --> 02:28.850
+encoded.
+
+02:28.850 --> 02:33.590
+So now let's try that it so refresh and Javascript.
+
+02:33.620 --> 02:34.290
+So there we go.
+
+02:34.310 --> 02:38.350
+So this is actually what we're sending over to the server within the data.
+
+02:38.570 --> 02:40.760
+And let's also try a query.
+
+02:41.240 --> 02:47.480
+So it works a lot better than form data and with form data there are some some more configuration that
+
+02:47.480 --> 02:52.880
+sometimes you have to do that maybe loop through all the different objects and format it properly.
+
+02:53.180 --> 02:54.730
+So definitely with.
+
+02:54.740 --> 03:01.180
+Query serialise it's a much better way to go to format your form information within this type of format.
+
+03:01.250 --> 03:05.440
+And this also makes it dynamic if you add a bunch more inputs there.
+
+03:05.540 --> 03:09.240
+It will also post that information over on Saval.
+
+03:09.260 --> 03:13.310
+So next let's update the rest of the libraries.
+
+03:13.370 --> 03:19.430
+So we've got Jay Corey and I'm going to clean up our code one more time just to make it a little bit
+
+03:19.670 --> 03:20.750
+more readable.
+
+03:20.780 --> 03:24.810
+So we've got X-ers and fetch still left to go.
+
+03:24.830 --> 03:27.230
+So let's update our actual library.
+
+03:27.290 --> 03:28.500
+So that's coming up next.
+
+03:28.520 --> 03:31.300
+We're going to do the post in that one as well.

@@ -1,0 +1,250 @@
+WEBVTT
+
+00:01.090 --> 00:04.900
+So it's create a function in order to determine what the correct answer is.
+
+00:04.900 --> 00:06.580
+So do function.
+
+00:06.580 --> 00:09.820
+Correct answer is.
+
+00:10.830 --> 00:15.340
+And we don't need to pass any parameters because they're all going to be sitting within these elements.
+
+00:15.370 --> 00:18.610
+So all we need to do is simply loop through these elements
+
+00:21.500 --> 00:30.380
+and let's grab them document we'll use query selector all and we're going to grab all of the divs that
+
+00:30.440 --> 00:33.710
+are within that select answers.
+
+00:33.740 --> 00:43.830
+We do it the same way as we see here within our c us and lots of console log.
+
+00:43.850 --> 00:55.910
+So before we loop through them all and let's grab this one here and whenever we click an answer will
+
+00:55.910 --> 01:00.450
+see that we can loop through all those elements and put them into the console.
+
+01:02.710 --> 01:06.810
+And this should actually be the full function there.
+
+01:09.130 --> 01:10.690
+So we loop through the node list
+
+01:13.460 --> 01:18.520
+and if we've got more than one we can see that are note list is all four.
+
+01:18.530 --> 01:19.960
+So we're grabbing all four of those.
+
+01:20.120 --> 01:24.400
+So now it's just a matter of checking the attributes on each and every one of those.
+
+01:24.620 --> 01:27.160
+So we can loop through all the elements.
+
+01:27.890 --> 01:37.120
+Let's do good old fashioned for loop for X equals zero and we're going to loop while Elle's length
+
+01:41.120 --> 01:45.220
+and then increment x.
+
+01:45.410 --> 01:48.410
+So here what we need to do is we need to check
+
+01:51.380 --> 01:55.530
+what the value of that particular element is.
+
+01:55.730 --> 02:01.170
+And if the attribute is so do get attribute
+
+02:04.800 --> 02:08.370
+so first would just make sure that we're actually Graben although attributes.
+
+02:08.560 --> 02:11.440
+So see there we've got false true false false.
+
+02:11.470 --> 02:13.530
+So that's working.
+
+02:13.580 --> 02:15.800
+Let's turn this into a condition.
+
+02:15.950 --> 02:20.610
+So if and this is a string value again.
+
+02:20.610 --> 02:22.370
+So just keep that in mind.
+
+02:24.540 --> 02:32.580
+So if it's true then we can just return and we can return whatever the value is of this particular element
+
+02:32.580 --> 02:34.920
+whatever that enraged MLS.
+
+02:36.420 --> 02:37.770
+And we'll just do it in a text
+
+02:42.820 --> 02:46.610
+and over here let's say console log out our response
+
+02:49.530 --> 02:50.570
+so we can actually see it.
+
+02:50.610 --> 02:55.180
+So click click one of these Avatar is correct.
+
+02:55.200 --> 02:58.490
+So it doesn't matter which when we click we're getting the correct one.
+
+02:58.500 --> 02:58.980
+So there we go.
+
+02:58.990 --> 03:01.780
+So that's how we can figure out what the correct answer is.
+
+03:01.950 --> 03:10.020
+So now we can what we can do is we can overwrite all of these elements so overwrite all of the options
+
+03:10.020 --> 03:14.880
+and just say correct answer was or wrong correct answer was whatever.
+
+03:15.270 --> 03:16.570
+So let's do that then.
+
+03:20.050 --> 03:24.520
+And maybe what we'll do is we'll pull the Selecta answers put it globally
+
+03:27.130 --> 03:36.170
+and within here what we can do is we can just wipe out whatever value is contained within there.
+
+03:36.340 --> 03:41.620
+So select answer enter h to Moul and then equal that to whatever our messages
+
+03:44.270 --> 03:54.370
+so great or we can do correct bunch of explanation marks and score is equal to that.
+
+03:57.480 --> 04:09.570
+The other option is that we want to grab this and say wrong it was and then here is where we want to
+
+04:09.570 --> 04:14.740
+get the correct answer.
+
+04:14.850 --> 04:16.120
+So it's too variable
+
+04:21.580 --> 04:28.610
+so a correct answer value is within this function.
+
+04:28.860 --> 04:33.880
+And the reason I'm doing it up here is because see over here we're overwriting that enraged him.
+
+04:33.990 --> 04:36.060
+So it's not really that great.
+
+04:36.090 --> 04:39.680
+That's not the right time to really make that function.
+
+04:40.850 --> 04:42.250
+So we'll see what happens.
+
+04:42.490 --> 04:46.410
+So have any known living species of hyenas are there.
+
+04:46.410 --> 04:47.530
+So do six.
+
+04:47.560 --> 04:51.350
+Wrong it was for true or false wrong.
+
+04:51.370 --> 04:52.490
+It was true.
+
+04:52.810 --> 04:54.460
+So I'm not doing too great.
+
+04:54.460 --> 04:55.190
+Correct.
+
+05:00.840 --> 05:05.170
+And we could also add in that correct answer there as well.
+
+05:05.340 --> 05:07.310
+So it always does and doesn't hurt.
+
+05:07.740 --> 05:10.830
+And you can even do even more you can add in some styling.
+
+05:10.850 --> 05:15.570
+Make it read make it whatever green for correct for wrong.
+
+05:15.660 --> 05:20.460
+So now it's up to you so you've got a fully functioning application.
+
+05:20.470 --> 05:22.350
+We should also move this button.
+
+05:22.510 --> 05:27.460
+Maybe we could move it to the top or to the bottom because it doesn't really look that great there or
+
+05:27.460 --> 05:38.250
+maybe we could hide it and then show it whenever where we're ready to click for more.
+
+05:38.290 --> 05:40.150
+So whenever it gets clicked.
+
+05:40.180 --> 05:48.230
+So whenever button gets clicked we fire off and there really is just always things that you can do.
+
+05:48.270 --> 05:50.560
+Always things that you can add an update.
+
+05:51.230 --> 06:02.460
+So let's update the display properties for the button so that style display and we'll set it to none.
+
+06:03.110 --> 06:08.750
+And then over here once they make a selection then we'll set it back to block.
+
+06:08.750 --> 06:14.560
+So once we do correct answer we're going to give them the option to continue the game.
+
+06:15.740 --> 06:18.670
+And over here we'll just set it to block.
+
+06:18.680 --> 06:23.450
+So all of this is going to do is this is just a little bit of a tweak on the application just to make
+
+06:23.450 --> 06:24.930
+it a little bit more functional.
+
+06:24.980 --> 06:28.370
+So that actually disappears so they can't just keep hitting next next next.
+
+06:28.400 --> 06:30.450
+They actually have to answer the question.
+
+06:30.560 --> 06:38.370
+So whatever they answer then they get the option to click the button and questions are pretty much and
+
+06:38.390 --> 06:43.020
+less and keeping score up here.
+
+06:43.100 --> 06:45.220
+So you can have a lot of fun with API.
+
+06:45.380 --> 06:49.740
+And this is just one example of some of the really cool things you can do with API.
+
+06:49.910 --> 06:51.810
+So go ahead try this for yourself.
+
+06:51.920 --> 06:54.710
+Update the code and definitely add some styling.
+
+06:54.740 --> 06:57.240
+Make it look a whole lot better.

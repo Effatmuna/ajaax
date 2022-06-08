@@ -1,0 +1,184 @@
+WEBVTT
+
+00:01.100 --> 00:09.560
+Last lesson we set up our Ajax request function and we're returning back the response data.
+
+00:10.490 --> 00:15.740
+So in this particular API we're going to try to pull out the results information so we don't need to
+
+00:15.770 --> 00:17.030
+look at any of the other stuff.
+
+00:17.030 --> 00:19.510
+We just need results.
+
+00:20.000 --> 00:23.710
+So let's make sure that we're looping through and we're pulling all of the results out.
+
+00:23.810 --> 00:25.520
+So notice that it's within a range.
+
+00:25.670 --> 00:30.590
+So we can loop through those results and then output those within our application.
+
+00:30.590 --> 00:37.250
+So let's set that up and let's also take a closer look at some of the data that's being returned back.
+
+00:37.400 --> 00:41.610
+So we've got categories entertainment correct answer.
+
+00:41.840 --> 00:46.700
+So we've got a number of different options here for the answer or we could do like a true or false.
+
+00:46.700 --> 00:50.130
+I think some of them are true or false.
+
+00:50.210 --> 00:53.420
+So these are all multiple choice.
+
+00:53.520 --> 00:57.720
+It's important to look through the data to make sure that you can accommodate it within the application
+
+00:57.790 --> 00:59.530
+as you're designing it.
+
+00:59.710 --> 01:04.200
+So we see that there's a number of incorrect answers that we need to provide.
+
+01:04.240 --> 01:09.640
+So we would have to pull this information back loop through it and output it for the user to be able
+
+01:09.640 --> 01:18.410
+to see and we can also query just each individual question or we could pull them all in and have a little
+
+01:18.410 --> 01:19.640
+mini application.
+
+01:19.730 --> 01:25.280
+But in this case it's going to make more sense if we simply pull back one and then every time the user
+
+01:25.280 --> 01:29.480
+wants another question then we simply pull out that question.
+
+01:29.480 --> 01:34.730
+So it's going to make it a lot more make a lot more sense within this type of project and we see that
+
+01:34.790 --> 01:40.550
+we've got questions and we've got correct answer is true.
+
+01:40.550 --> 01:47.410
+So sometimes the format is different so this one is a boolean value and this time it's a multiple choice
+
+01:48.190 --> 01:49.210
+type question.
+
+01:49.240 --> 01:52.930
+So we know with Boolean that we don't have incorrect answers.
+
+01:52.930 --> 01:55.620
+We just have the correct answer which is true or false.
+
+01:55.810 --> 01:59.290
+So the correct answer is always within that same format but these are changing.
+
+01:59.290 --> 02:01.690
+So we have to keep that in mind as well.
+
+02:01.870 --> 02:06.090
+And with this we simply we know that it's within an array format.
+
+02:06.130 --> 02:09.010
+So we just want to return back that first item.
+
+02:09.040 --> 02:15.300
+So there we go so we've got our basic structure of the question and we're ready to start building this
+
+02:15.580 --> 02:19.160
+within our reach to Mel.
+
+02:19.290 --> 02:24.540
+So let's create a div given an ID of output.
+
+02:24.660 --> 02:27.450
+So this is where our content will go.
+
+02:27.450 --> 02:34.040
+We also need another one for is going to give this one an idea of score.
+
+02:34.770 --> 02:37.040
+So we need to track that.
+
+02:37.080 --> 02:38.680
+Correct.
+
+02:38.700 --> 02:42.310
+So we're going to create an object here.
+
+02:42.350 --> 02:46.610
+And so one one value here will be correct.
+
+02:47.150 --> 02:54.190
+And currently this value is going to be zero and comma separated out and this one will just call wrong
+
+02:55.590 --> 02:58.570
+could call it incorrect as well.
+
+02:58.570 --> 03:01.170
+So that's going to give us some information for the scoring.
+
+03:01.420 --> 03:04.200
+Let's open up a little bit bigger as well.
+
+03:04.660 --> 03:07.150
+So we can take a closer look at some of this code.
+
+03:07.450 --> 03:10.250
+So we've got a global variable called answers.
+
+03:10.330 --> 03:12.340
+So this is basically going to keep score.
+
+03:12.520 --> 03:17.590
+We've got the output that we're going to generate every time the user clicks the button to get more
+
+03:17.590 --> 03:22.170
+questions and we're going to actually move the button down the low.
+
+03:22.540 --> 03:28.130
+So we've got the sclera the top we've got the output below that.
+
+03:28.390 --> 03:33.770
+And then the content there and I'm also going to update this as well.
+
+03:34.140 --> 03:37.950
+So that way we have essentially a placeholder for the score.
+
+03:38.040 --> 03:43.710
+So we are ready to build the sote and in the next lesson we're going to continue to build out what our
+
+03:43.710 --> 03:44.890
+question is going to look like.
+
+03:44.940 --> 03:48.430
+We've got the core mechanics of the game set up and ready to go.
+
+03:48.510 --> 03:54.080
+So we've got scoring we've got an output area for the question and we need to generate.
+
+03:54.120 --> 03:59.280
+So we're going to generate all of these questions and answers and then we're going to add an event listener
+
+03:59.280 --> 04:04.590
+to listen for the click and then we're going to check to see if the correct answer was selected and
+
+04:04.590 --> 04:09.750
+if it is then we're going to score one for correct and if it was wrong then we'll score one for wrong
+
+04:09.840 --> 04:11.710
+and that's how we're going to keep score there.
+
+04:11.760 --> 04:16.440
+And next we just have to build out what the going to look like within that output element.
+
+04:16.440 --> 04:17.060
+So it's coming up.
